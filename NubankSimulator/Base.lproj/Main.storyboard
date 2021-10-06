@@ -113,11 +113,28 @@
                         <outlet property="loginButton" destination="kDu-ZW-sCN" id="OAn-oq-gma"/>
                         <outlet property="loginLabelView" destination="Ny5-o8-Xjz" id="pwy-cA-lei"/>
                         <outlet property="passwordTextField" destination="MBu-tz-MsG" id="c6S-yB-UBV"/>
+                        <segue destination="vc0-52-tw4" kind="show" identifier="goToHome" id="Pax-v8-vd0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1034.7826086956522" y="93.750000000000014"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="rka-IG-xW0">
+            <objects>
+                <viewController id="vc0-52-tw4" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6qq-bv-b81">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="BrA-cm-tSg"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="z5o-Aj-RVu"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gZM-Ct-Znu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1881" y="94"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="7MG-5H-0Hg">

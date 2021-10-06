@@ -4,6 +4,7 @@ class ButtonView: UIView, NibOwnerLoadable {
     
     // MARK: - IBOutlets
     @IBOutlet weak var button: UIButton!
+    @IBOutlet weak var loader: UIActivityIndicatorView!
     
     // MARK: - Stored Properties
     private let textBuilder: TextBuilder = TextBuilder()
@@ -33,6 +34,11 @@ extension ButtonView {
     func isEnable(_ enable: Bool) {
         alpha = enable ? 1 : 0.5
         button.isEnabled = enable
+    }
+    
+    func isLoading(_ loading: Bool) {
+        loader.isHidden = !loading
+        button.isHidden = loading
     }
 }
 

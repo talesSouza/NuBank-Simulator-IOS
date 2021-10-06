@@ -23,6 +23,11 @@
 		1C0AE707270D063700D47E4B /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0AE706270D063700D47E4B /* BaseViewController.swift */; };
 		1C0AE709270D06B400D47E4B /* CoreModuleDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0AE708270D06B400D47E4B /* CoreModuleDependencies.swift */; };
 		1C0AE70B270D076A00D47E4B /* ClosureTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0AE70A270D076A00D47E4B /* ClosureTypes.swift */; };
+		1C53F63D270E387800A8E54A /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C53F63C270E387800A8E54A /* LoginService.swift */; };
+		1C53F63F270E388A00A8E54A /* LoginServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C53F63E270E388A00A8E54A /* LoginServiceProtocol.swift */; };
+		1C53F641270E391200A8E54A /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C53F640270E391200A8E54A /* LoginViewModel.swift */; };
+		1C53F643270E391B00A8E54A /* LoginViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C53F642270E391B00A8E54A /* LoginViewState.swift */; };
+		1C53F645270E425200A8E54A /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C53F644270E425200A8E54A /* UIViewController+Extensions.swift */; };
 		1C92EE6A270DD85E0067BE37 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1C92EE69270DD85E0067BE37 /* Localizable.strings */; };
 		1C92EE6E270DE2130067BE37 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C92EE6D270DE2130067BE37 /* String+Extensions.swift */; };
 		1C92EE71270DE3AA0067BE37 /* LabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C92EE70270DE3AA0067BE37 /* LabelView.swift */; };
@@ -71,6 +76,11 @@
 		1C0AE706270D063700D47E4B /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		1C0AE708270D06B400D47E4B /* CoreModuleDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreModuleDependencies.swift; sourceTree = "<group>"; };
 		1C0AE70A270D076A00D47E4B /* ClosureTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosureTypes.swift; sourceTree = "<group>"; };
+		1C53F63C270E387800A8E54A /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
+		1C53F63E270E388A00A8E54A /* LoginServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginServiceProtocol.swift; sourceTree = "<group>"; };
+		1C53F640270E391200A8E54A /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		1C53F642270E391B00A8E54A /* LoginViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewState.swift; sourceTree = "<group>"; };
+		1C53F644270E425200A8E54A /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		1C92EE69270DD85E0067BE37 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		1C92EE6D270DE2130067BE37 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		1C92EE70270DE3AA0067BE37 /* LabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelView.swift; sourceTree = "<group>"; };
@@ -136,6 +146,7 @@
 				1C06EE4A270CC24F006329AC /* Modules */,
 				1CED5502270D32260089F9AB /* Protocols */,
 				1C06EE4B270CC25F006329AC /* Resources */,
+				1C53F63A270E385800A8E54A /* Service */,
 			);
 			path = NubankSimulator;
 			sourceTree = "<group>";
@@ -172,6 +183,8 @@
 			isa = PBXGroup;
 			children = (
 				1C06EE1D270CC1CF006329AC /* LoginViewController.swift */,
+				1C53F640270E391200A8E54A /* LoginViewModel.swift */,
+				1C53F642270E391B00A8E54A /* LoginViewState.swift */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -256,6 +269,23 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		1C53F63A270E385800A8E54A /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				1C53F63B270E386F00A8E54A /* Login */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		1C53F63B270E386F00A8E54A /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				1C53F63C270E387800A8E54A /* LoginService.swift */,
+				1C53F63E270E388A00A8E54A /* LoginServiceProtocol.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
 		1C92EE6B270DE1EC0067BE37 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -286,6 +316,7 @@
 			isa = PBXGroup;
 			children = (
 				1C92EE77270DFFDA0067BE37 /* UIView+Extensions.swift */,
+				1C53F644270E425200A8E54A /* UIViewController+Extensions.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -440,13 +471,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				1C92EE78270DFFDA0067BE37 /* UIView+Extensions.swift in Sources */,
+				1C53F63F270E388A00A8E54A /* LoginServiceProtocol.swift in Sources */,
 				1C0AE6FF270CFC4800D47E4B /* TextStyle.swift in Sources */,
 				1C0AE709270D06B400D47E4B /* CoreModuleDependencies.swift in Sources */,
+				1C53F643270E391B00A8E54A /* LoginViewState.swift in Sources */,
 				1C06EE1E270CC1CF006329AC /* LoginViewController.swift in Sources */,
+				1C53F645270E425200A8E54A /* UIViewController+Extensions.swift in Sources */,
 				1C0AE70B270D076A00D47E4B /* ClosureTypes.swift in Sources */,
 				1C92EE6E270DE2130067BE37 /* String+Extensions.swift in Sources */,
 				1CED5505270D323F0089F9AB /* NibOwnerLoadable.swift in Sources */,
+				1C53F63D270E387800A8E54A /* LoginService.swift in Sources */,
 				1C06EE1A270CC1CF006329AC /* AppDelegate.swift in Sources */,
+				1C53F641270E391200A8E54A /* LoginViewModel.swift in Sources */,
 				1C06EE4E270CC382006329AC /* ButtonView.swift in Sources */,
 				1C0AE6FD270CFA9200D47E4B /* TextBuilder.swift in Sources */,
 				1C92EE71270DE3AA0067BE37 /* LabelView.swift in Sources */,
