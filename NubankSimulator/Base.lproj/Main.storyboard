@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4Fe-VE-kqz">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="NubankSimulator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nuBank" translatesAutoresizingMaskIntoConstraints="NO" id="oE9-u7-nBC">
+                                <rect key="frame" x="20" y="64" width="72" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="72" id="2lx-FO-Ttj"/>
+                                    <constraint firstAttribute="height" constant="36" id="yVu-k7-Zmc"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ny5-o8-Xjz" customClass="LabelView" customModule="NubankSimulator" customModuleProvider="target">
+                                <rect key="frame" x="80" y="204" width="254" height="40"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="sBN-al-soO"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="RYJ-lP-eQo">
+                                <rect key="frame" x="57" y="280" width="300" height="115"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cA5-sK-ayE" userLabel="cpfView">
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="50"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="CPF" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PSr-bf-Z1z">
+                                                <rect key="frame" x="0.0" y="0.0" width="300" height="50"/>
+                                                <color key="tintColor" red="0.46158060210000001" green="0.35730287199999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="textColor" red="0.46158060210000001" green="0.35730287199999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <fontDescription key="fontDescription" name="GillSans-SemiBold" family="Gill Sans" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="BYZ-38-t0r" id="Vux-Ji-QEd"/>
+                                                </connections>
+                                            </textField>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="56Z-yZ-cRI"/>
+                                            <constraint firstAttribute="bottom" secondItem="PSr-bf-Z1z" secondAttribute="bottom" id="9HJ-XY-1dy"/>
+                                            <constraint firstItem="PSr-bf-Z1z" firstAttribute="leading" secondItem="cA5-sK-ayE" secondAttribute="leading" id="Ccv-ad-oFe"/>
+                                            <constraint firstAttribute="trailing" secondItem="PSr-bf-Z1z" secondAttribute="trailing" id="QsK-Zf-It7"/>
+                                            <constraint firstItem="PSr-bf-Z1z" firstAttribute="top" secondItem="cA5-sK-ayE" secondAttribute="top" id="UG6-3G-fn4"/>
+                                            <constraint firstAttribute="width" constant="300" id="nEj-Cc-Gym"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kcj-zU-6oj" userLabel="passwordView">
+                                        <rect key="frame" x="0.0" y="65" width="300" height="50"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Senha" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MBu-tz-MsG">
+                                                <rect key="frame" x="0.0" y="0.0" width="300" height="50"/>
+                                                <color key="tintColor" red="0.46158060210000001" green="0.35730287199999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="textColor" red="0.46158060210000001" green="0.35730287199999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <fontDescription key="fontDescription" name="GillSans-SemiBold" family="Gill Sans" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="BYZ-38-t0r" id="AhU-MR-hV8"/>
+                                                </connections>
+                                            </textField>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="MBu-tz-MsG" secondAttribute="trailing" id="AZx-13-PJ0"/>
+                                            <constraint firstItem="MBu-tz-MsG" firstAttribute="top" secondItem="Kcj-zU-6oj" secondAttribute="top" id="DME-8a-2UN"/>
+                                            <constraint firstItem="MBu-tz-MsG" firstAttribute="leading" secondItem="Kcj-zU-6oj" secondAttribute="leading" id="LlU-9E-4of"/>
+                                            <constraint firstAttribute="height" constant="50" id="d4E-no-dhP"/>
+                                            <constraint firstAttribute="width" constant="300" id="rqc-0y-1F4"/>
+                                            <constraint firstAttribute="bottom" secondItem="MBu-tz-MsG" secondAttribute="bottom" id="zpr-3r-X8h"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kDu-ZW-sCN" customClass="ButtonView" customModule="NubankSimulator" customModuleProvider="target">
+                                <rect key="frame" x="57" y="559" width="300" height="50"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="0c0-x0-2aM"/>
+                                    <constraint firstAttribute="width" constant="300" id="ktf-FJ-yrr"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="oE9-u7-nBC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="FM4-PQ-1wA"/>
+                            <constraint firstItem="kDu-ZW-sCN" firstAttribute="top" secondItem="RYJ-lP-eQo" secondAttribute="bottom" constant="164" id="Uge-zk-JIG"/>
+                            <constraint firstItem="kDu-ZW-sCN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XaD-uF-wgP"/>
+                            <constraint firstItem="RYJ-lP-eQo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Zh9-du-XIu"/>
+                            <constraint firstItem="Ny5-o8-Xjz" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="160" id="abX-yV-19X"/>
+                            <constraint firstItem="oE9-u7-nBC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="aeP-Um-WTL"/>
+                            <constraint firstItem="RYJ-lP-eQo" firstAttribute="top" secondItem="Ny5-o8-Xjz" secondAttribute="bottom" constant="36" id="dZM-aN-heC"/>
+                            <constraint firstItem="Ny5-o8-Xjz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="o9f-OS-xp8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ny5-o8-Xjz" secondAttribute="trailing" constant="80" id="tQA-qX-WC4"/>
+                            <constraint firstItem="Ny5-o8-Xjz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="80" id="xnu-On-KSN"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Kns-2z-cd1"/>
+                    <connections>
+                        <outlet property="cpfTextField" destination="PSr-bf-Z1z" id="oLg-WP-hII"/>
+                        <outlet property="loginButton" destination="kDu-ZW-sCN" id="OAn-oq-gma"/>
+                        <outlet property="loginLabelView" destination="Ny5-o8-Xjz" id="pwy-cA-lei"/>
+                        <outlet property="passwordTextField" destination="MBu-tz-MsG" id="c6S-yB-UBV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1034.7826086956522" y="93.750000000000014"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="7MG-5H-0Hg">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4Fe-VE-kqz" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="78X-4a-bb6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="oND-9E-t6h"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dqD-Ak-F8t" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="128.98550724637681" y="93.750000000000014"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="nuBank" width="275" height="97.666664123535156"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
