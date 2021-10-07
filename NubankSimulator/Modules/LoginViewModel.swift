@@ -1,13 +1,13 @@
 import UIKit
 import Combine
-//import Resolver
-//import KeyValueStorage
+import Resolver
+import KeyValueStorage
 
 class LoginViewModel {
     
     // MARK: - Dependecies
-//    @LazyInjected var service: LoginServiceProtocol
-//    @LazyInjected var storage: KeyValueStorageProtocol
+    @LazyInjected var service: LoginServiceProtocol
+    @LazyInjected var storage: KeyValueStorageProtocol
     
     // MARK: Published Properties
     @Published var state: LoginViewState = .started
@@ -37,5 +37,23 @@ extension LoginViewModel {
     var isValidData: Bool {
         guard let cpf = cpf, let password = password else { return false }
         return !cpf.isEmpty && !password.isEmpty
+    }
+}
+
+// MARK: - Service
+extension LoginViewModel {
+    
+    func login() {
+        guard let cpf = cpf, let password = password else { return }
+        state = .loading
+        service.postLogin(cpf: cpf, password: password) { response in
+            if response {
+                self.storage.set(value: true, for: .isLogged)
+                self.storage.set(value: cpf, for: .userEmail)
+                self.state = .loginSucceeded
+            } else {
+                self.state = .loginFailed
+            }
+        }
     }
 }

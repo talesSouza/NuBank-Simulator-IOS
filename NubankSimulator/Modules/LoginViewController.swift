@@ -17,6 +17,7 @@ extension LoginViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setObserver()
+        setup()
     }
 }
 
@@ -44,7 +45,6 @@ extension LoginViewController {
             showSimpleAlert(message: "Login falhou!")
         case .loginSucceeded:
             goToHome()
-            //INSTALAR OS PODS P RECONHECER QDO ACABOU DE DIGITAR
         }
     }
 }
@@ -62,6 +62,7 @@ extension LoginViewController {
         loginButton.set(title: "login.login".localized, style: .secondary)
         loginButton.getBordered()
         loginButton.isEnable(false)
+        didTapButton()
     }
     
     private func setupTextFields() {
@@ -77,10 +78,15 @@ extension LoginViewController {
 // MARK: - Private Methods
 extension LoginViewController {
     
-    private func goToHome() {
-        loginButton.set {
-            self.performSegue(withIdentifier: "goToHome", sender: self)
+    private func didTapButton() {
+        loginButton.set { [weak self] in
+            guard let self = self else { return }
+            self.viewModel.login()
         }
+    }
+    
+    private func goToHome() {
+        self.performSegue(withIdentifier: "goToHome", sender: self)
     }
 }
 
@@ -94,5 +100,10 @@ extension LoginViewController: UITextFieldDelegate {
         } else if text == passwordTextField.text {
             viewModel.set(password: text)
         }
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
     }
 }

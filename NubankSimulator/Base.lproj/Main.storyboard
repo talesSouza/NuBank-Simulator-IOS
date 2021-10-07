@@ -11,7 +11,7 @@
         <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="NubankSimulator" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" id="BYZ-38-t0r" customClass="LoginViewController" customModule="NubankSimulator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -38,10 +38,10 @@
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="CPF" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PSr-bf-Z1z">
                                                 <rect key="frame" x="0.0" y="0.0" width="300" height="50"/>
-                                                <color key="tintColor" red="0.46158060210000001" green="0.35730287199999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <color key="textColor" red="0.46158060210000001" green="0.35730287199999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="tintColor" red="0.20383008717049417" green="0.081018713629966599" blue="0.35254913015463918" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="textColor" red="0.20383008720000001" green="0.081018713630000003" blue="0.3525491302" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <fontDescription key="fontDescription" name="GillSans-SemiBold" family="Gill Sans" pointSize="16"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
                                                 <connections>
                                                     <outlet property="delegate" destination="BYZ-38-t0r" id="Vux-Ji-QEd"/>
                                                 </connections>
@@ -62,10 +62,10 @@
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Senha" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MBu-tz-MsG">
                                                 <rect key="frame" x="0.0" y="0.0" width="300" height="50"/>
-                                                <color key="tintColor" red="0.46158060210000001" green="0.35730287199999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <color key="textColor" red="0.46158060210000001" green="0.35730287199999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="tintColor" red="0.20383008720000001" green="0.081018713630000003" blue="0.3525491302" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="textColor" red="0.20383008720000001" green="0.081018713630000003" blue="0.3525491302" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <fontDescription key="fontDescription" name="GillSans-SemiBold" family="Gill Sans" pointSize="16"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                                 <connections>
                                                     <outlet property="delegate" destination="BYZ-38-t0r" id="AhU-MR-hV8"/>
                                                 </connections>
@@ -123,7 +123,7 @@
         <!--View Controller-->
         <scene sceneID="rka-IG-xW0">
             <objects>
-                <viewController id="vc0-52-tw4" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeViewController" id="vc0-52-tw4" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6qq-bv-b81">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

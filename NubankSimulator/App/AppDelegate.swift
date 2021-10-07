@@ -1,36 +1,59 @@
-//
-//  AppDelegate.swift
-//  NubankSimulator
-//
-//  Created by Tales Silveira de Souza on 05/10/21.
-//
-
 import UIKit
+import IQKeyboardManagerSwift
+import KeyValueStorage
+import Resolver
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
-
+    // MARK: - Dependencies
+    @LazyInjected var storage: KeyValueStorageProtocol
+    
+    // MARK: - Stored Properties
+    var window: UIWindow?
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        IQKeyboardManager.shared.enable = true
+        
+        setupAppDependencies()
+        setInitialViewController()
+        
         return true
     }
-
-    // MARK: UISceneSession Lifecycle
-
-    func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
-        // Called when a new scene session is being created.
-        // Use this method to select a configuration to create the new scene with.
-        return UISceneConfiguration(name: "Default Configuration", sessionRole: connectingSceneSession.role)
-    }
-
-    func application(_ application: UIApplication, didDiscardSceneSessions sceneSessions: Set<UISceneSession>) {
-        // Called when the user discards a scene session.
-        // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
-        // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
-    }
-
-
 }
 
+// MARK: - Setup
+extension AppDelegate {
+    
+    private func setupWindow(rootViewController: UIViewController) {
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+        self.window?.rootViewController = rootViewController
+        self.window?.makeKeyAndVisible()
+    }
+    
+    private func setupAppDependencies() {
+        let appDependencies = AppDependencies()
+        appDependencies.setup()
+    }
+}
+
+// MARK: - Launch
+extension AppDelegate {
+    
+    private func setInitialViewController() {
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        guard let navigation = storyboard.instantiateInitialViewController() as? UINavigationController else { return }
+        var rootViewController: UIViewController
+        
+        if let isLogged: Bool = storage.get(key: .isLogged), isLogged {
+            rootViewController = storyboard.instantiateViewController(withIdentifier: "HomeViewController")
+        } else {
+            rootViewController = storyboard.instantiateViewController(withIdentifier: "LoginViewController")
+        }
+        
+        navigation.viewControllers = [rootViewController]
+        setupWindow(rootViewController: navigation)
+    }
+}
