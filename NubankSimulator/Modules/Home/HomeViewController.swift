@@ -3,9 +3,9 @@ import UIKit
 class HomeViewController: BaseViewController {
     
     // MARK: - IBOutlets
+    @IBOutlet weak var userNameLabelView: LabelView!
     @IBOutlet weak var balanceLabelView: LabelView!
     @IBOutlet weak var totalBalance: LabelView!
-    
 }
 
 // MARK: - Life Cycle
@@ -16,7 +16,7 @@ extension HomeViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        hideNavigationBar(hide: false)
+        hideNavigationBar(hide: true)
     }
 }
 
@@ -28,9 +28,10 @@ extension HomeViewController {
     }
     
     private func setupLabels() {
-        balanceLabelView.set(text: "home.balance".localized, textStyle: TextStyle(color: .white, size: .p20, weight: .semiBold))
+        userNameLabelView.set(text: "Olá, Tales", textStyle: TextStyle(color: .white, size: .p18, weight: .semiBold))
         
-        totalBalance.set(text: "R$ 24.844", textStyle: TextStyle(color: .white, size: .p30, weight: .bold))
-        totalBalance.getBordered(width: 0.5, color: .white, radius: 3)
+        balanceLabelView.set(text: "home.account".localized, textStyle: TextStyle(color: .black, size: .p22, weight: .semiBold))
+        
+        totalBalance.set(text: "R$ 244.844,39", textStyle: TextStyle(color: .black, size: .p26, weight: .semiBold))
     }
 }

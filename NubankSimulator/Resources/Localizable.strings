@@ -3,4 +3,4 @@
 "login.doLogin" = "Faça seu login";
 
 // MARK: - Home
-"home.balance" = "Saldo total:";
+"home.account" = "Conta";

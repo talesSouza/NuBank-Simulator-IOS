@@ -15,6 +15,7 @@ enum TextBuilderFontSize: CGFloat {
 
 enum TextBuilderFontWeight: String {
    
+    case regular = "Regular"
     case semiBold = "SemiBold"
     case bold = "Bold"
 }
