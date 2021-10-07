@@ -1,3 +1,6 @@
 // MARK: - Login
 "login.login" = "ENTRAR";
 "login.doLogin" = "Faça seu login";
+
+// MARK: - Home
+"home.balance" = "Saldo total:";

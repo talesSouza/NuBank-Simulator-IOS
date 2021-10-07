@@ -49,7 +49,7 @@ extension LoginViewModel {
         service.postLogin(cpf: cpf, password: password) { response in
             if response {
                 self.storage.set(value: true, for: .isLogged)
-                self.storage.set(value: cpf, for: .userEmail)
+                self.storage.set(value: cpf, for: .userCPF)
                 self.state = .loginSucceeded
             } else {
                 self.state = .loginFailed

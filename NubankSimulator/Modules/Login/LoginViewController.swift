@@ -6,7 +6,7 @@ class LoginViewController: BaseViewController {
     @IBOutlet weak var loginLabelView: LabelView!
     @IBOutlet weak var cpfTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
-    @IBOutlet weak var loginButton: ButtonView!
+    @IBOutlet weak var loginButtonView: ButtonView!
     
     // MARK: - Dependencies
     var viewModel: LoginViewModel = LoginViewModel()
@@ -17,11 +17,14 @@ extension LoginViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setObserver()
-        setup()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        hideNavigationBar(hide: false)
     }
 }
 
-// MARK: - Setup
+// MARK: - View State
 extension LoginViewController {
     
     func setObserver() {
@@ -32,15 +35,16 @@ extension LoginViewController {
     }
     
     func changed(state: LoginViewState) {
-        loginButton.isLoading(false)
+        loginButtonView.isLoading(false)
         
         switch state {
         case .started:
             setup()
+            setNavigationBarLayout()
         case .dataChanged:
-            loginButton.isEnable(viewModel.isValidData)
+            loginButtonView.isEnable(viewModel.isValidData)
         case .loading:
-            loginButton.isLoading(true)
+            loginButtonView.isLoading(true)
         case .loginFailed:
             showSimpleAlert(message: "Login falhou!")
         case .loginSucceeded:
@@ -59,9 +63,9 @@ extension LoginViewController {
     }
     
     private func setupButtons() {
-        loginButton.set(title: "login.login".localized, style: .secondary)
-        loginButton.getBordered()
-        loginButton.isEnable(false)
+        loginButtonView.set(title: "login.login".localized, style: .secondary)
+        loginButtonView.getBordered()
+        loginButtonView.isEnable(false)
         didTapButton()
     }
     
@@ -79,7 +83,7 @@ extension LoginViewController {
 extension LoginViewController {
     
     private func didTapButton() {
-        loginButton.set { [weak self] in
+        loginButtonView.set { [weak self] in
             guard let self = self else { return }
             self.viewModel.login()
         }

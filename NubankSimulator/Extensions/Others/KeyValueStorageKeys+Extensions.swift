@@ -7,7 +7,7 @@ extension KeyValueStorageKey {
     
     // MARK: - Session
     static let isLogged = KeyValueStorageKey(type: .keychain, value: "isLogged")
-    static let userEmail = KeyValueStorageKey(type: .keychain, value: "userEmail")
+    static let userCPF = KeyValueStorageKey(type: .keychain, value: "userCPF")
     
     // MARK: - Home
     static let chosenPaymentType = KeyValueStorageKey(type: .memory, value: "chosenPaymentType")

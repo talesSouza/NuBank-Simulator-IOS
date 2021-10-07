@@ -6,6 +6,11 @@ enum TextBuilderFontSize: CGFloat {
     case p16 = 16
     case p18 = 18
     case p20 = 20
+    case p22 = 22
+    case p24 = 24
+    case p26 = 26
+    case p30 = 30
+    case p34 = 34
 }
 
 enum TextBuilderFontWeight: String {
