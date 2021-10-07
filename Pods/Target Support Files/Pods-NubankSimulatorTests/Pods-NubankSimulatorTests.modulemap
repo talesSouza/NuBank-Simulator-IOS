@@ -1,0 +1,6 @@
+framework module Pods_NubankSimulatorTests {
+  umbrella header "Pods-NubankSimulatorTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

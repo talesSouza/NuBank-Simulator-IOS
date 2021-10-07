@@ -1,0 +1,24 @@
+PODS:
+  - IQKeyboardManagerSwift (6.5.6)
+  - KeyValueStorage (2.0.1)
+  - Resolver (1.4.0)
+
+DEPENDENCIES:
+  - IQKeyboardManagerSwift (= 6.5.6)
+  - KeyValueStorage (~> 2.0)
+  - Resolver (= 1.4)
+
+SPEC REPOS:
+  trunk:
+    - IQKeyboardManagerSwift
+    - KeyValueStorage
+    - Resolver
+
+SPEC CHECKSUMS:
+  IQKeyboardManagerSwift: c7df9d2deb356c04522f5c4b7b6e4ce4d8ed94fe
+  KeyValueStorage: 6ab6c8c2d404b1ac07da09684ec8723e66270d0d
+  Resolver: 9371a9c561477b2ff76408114fa3ba7e94d17afe
+
+PODFILE CHECKSUM: 3a450107647ce21f45955f24d7f1dc9553ce7047
+
+COCOAPODS: 1.10.2

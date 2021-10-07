@@ -1,0 +1,1456 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00EED39422F813545166EF21A167BD66 /* Pods-NubankSimulator-NubankSimulatorUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1549AA29EE68DF51663DA6F2FCFF75E9 /* Pods-NubankSimulator-NubankSimulatorUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0869014244D95B32E684E4AFA379CF9D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79CF7D56C5D50C18B2EA0ED106D998C7 /* Foundation.framework */; };
+		0B5336371B73A444D419CC7FFDDFD2BA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79CF7D56C5D50C18B2EA0ED106D998C7 /* Foundation.framework */; };
+		0C0E283E959EB432597F0031FF0C1C1F /* Pods-NubankSimulator-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EB8FD777A0ED6EA2599A87ED9AD8A651 /* Pods-NubankSimulator-dummy.m */; };
+		102F4487BC4ADC3C2B56A0470E0A9468 /* IQKeyboardManagerConstantsInternal.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D5D003BD4396B22F99E33C6AA499CC /* IQKeyboardManagerConstantsInternal.swift */; };
+		18C11382B92A5DFCBD7356AE97C59CAE /* Pods-NubankSimulatorTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 715354409586099381DAD864E391F1C8 /* Pods-NubankSimulatorTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		22EB5564CB73055DCB6A0CEC6911CB09 /* KeyValueStorage-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A71277B273B18AB41AB7707CEE02F80D /* KeyValueStorage-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2358B57B83BE526AED64799C6892B2CE /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A42DBD2F42D55606EEBA514009498B87 /* QuartzCore.framework */; };
+		259D6FC80BCFE785471F743B1F533970 /* IQNSArray+Sort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5662584CE054C4DE2A6DE5F172C8A4F4 /* IQNSArray+Sort.swift */; };
+		2E172F67504888AA1D2AF55F3F7C8579 /* KeyValueStorageKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E9568BCC37FB7FD4E600D452873CFC6 /* KeyValueStorageKey.swift */; };
+		33483C1C427390BED308CBAB3EEEE277 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 840FA0B75AF62912A30DDC66B647ED98 /* CoreGraphics.framework */; };
+		38EE0727B33503FD20E1363988E46AB2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04D60AC13D33197690A05C641925DDDA /* UIKit.framework */; };
+		3F091C427A3E96117C902E8EA143729E /* IQKeyboardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A319F5F2912EB715EC0612BB098EF25 /* IQKeyboardManager.swift */; };
+		44CB76BB1F965612E0528A24DEC6F94F /* Resolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0D238534457239C16A03C568132ADA /* Resolver.swift */; };
+		4737103B10A1C40C5301D0512B9310E4 /* IQKeyboardReturnKeyHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 342CEACF3830461EC891405914F94925 /* IQKeyboardReturnKeyHandler.swift */; };
+		4C069FA7FAA45154DA92CF5DF3BCDCA9 /* IQUITextFieldView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0C457BD7C04CF2125C2A882CE3BAE1 /* IQUITextFieldView+Additions.swift */; };
+		4F0CF2AD58CF0D08BC090E7AF0DD63D7 /* IQInvocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8396E2D8FE011277F34FC3B94BFD22 /* IQInvocation.swift */; };
+		4FDCFC5753FFB24C0823982C16416DDC /* KeyValueStorageProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CF2EA6953F31AECD791EAE394AC774 /* KeyValueStorageProtocol.swift */; };
+		5044FEAEF09468B6964F9F37A1F1F45C /* IQPreviousNextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88759D614E7C14D8635DED3D4179A12D /* IQPreviousNextView.swift */; };
+		5BA512A282585297D906451CA40E3B38 /* Pods-NubankSimulator-NubankSimulatorUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C08AA25303A62EFFC2D4A30A63908822 /* Pods-NubankSimulator-NubankSimulatorUITests-dummy.m */; };
+		5FA892AD2ECA27C54FD9BA1C864B1CC0 /* KeyValueStorage-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AAD8F3FB49B0EF5FEA20D038DC5FF3B /* KeyValueStorage-dummy.m */; };
+		62A85277D0462C43B80A05E8822794BB /* IQKeyboardManagerSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B7423CC32E9B3184119225232CD10960 /* IQKeyboardManagerSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6DC9A0AB778FAB8126E9901CE09C4056 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04D60AC13D33197690A05C641925DDDA /* UIKit.framework */; };
+		74341DA37F4B926FDF4CB2599CAC547A /* IQUIViewController+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE84770161E84907E300F9E21D49C21A /* IQUIViewController+Additions.swift */; };
+		7598D4407817D87F754BDD206A3A6BF3 /* KeyValueStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141FC5C4AEF7777B0AF0AE5C24109026 /* KeyValueStorage.swift */; };
+		7B82B6A904EC5A9EAF2301A9509B456C /* Decoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648F234AFE98E4857FBAD4155514A2F1 /* Decoder.swift */; };
+		7FB3576FD619DD256294BAD7E5F83CBE /* IQTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D707665B29120CFD415F736C5B44E4 /* IQTextView.swift */; };
+		8B439A47AA5FDEF67AD63BDDB808AC5A /* IQUIView+Hierarchy.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67352F6262742CBD5DABB64C092CF0D /* IQUIView+Hierarchy.swift */; };
+		980E5594F8DBCE362764AEDC2F086E36 /* IQToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F4F8E112637F19BC9AD3A41A67BFFE /* IQToolbar.swift */; };
+		99F527F21B76919827A38E227C754A42 /* Resolver-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 91E6C0AA40C294084C4AE4F07C4ACA65 /* Resolver-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AE3B246482DCD60BA846EA3CE983A1FB /* IQUIView+IQKeyboardToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9EACBCEC41DB73671D70E9E0891E06 /* IQUIView+IQKeyboardToolbar.swift */; };
+		B98378C55379E1B92897F11A22E38443 /* IQKeyboardManagerSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 06FA460B5838D0D4B0CC8CC4146D04C6 /* IQKeyboardManagerSwift-dummy.m */; };
+		BA11A44D3EE2DDACCC559E8BE11EBBA5 /* KeyValueStorageType.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2BD28D734E886E78C324B0B6348A78 /* KeyValueStorageType.swift */; };
+		BC4AAD022A3A592FDC28E319FD5708AC /* Pods-NubankSimulator-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D463893947257A8BFC08753CE13E57E /* Pods-NubankSimulator-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C04C5F1F1D6B337F87E157B55A747E41 /* IQKeyboardManagerConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0634DF28B3D991EB5E6BE50CEDCCB6C4 /* IQKeyboardManagerConstants.swift */; };
+		C0EB3776478AB80676E488BC9C9CDA3C /* IQUIScrollView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171337378FA9A6639B140B6D32A65F03 /* IQUIScrollView+Additions.swift */; };
+		C35DCE97EB77150C41E735DB57BD6616 /* IQTitleBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB41B5F080D7A4A2B6913D2297A37C9E /* IQTitleBarButtonItem.swift */; };
+		CD49A9978EBC37801F685681937F3F16 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79CF7D56C5D50C18B2EA0ED106D998C7 /* Foundation.framework */; };
+		D1ECF3D2DE1752522DB1BF306577D2F6 /* Resolver-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FFB351B593791E792620FACC25823215 /* Resolver-dummy.m */; };
+		D488EAB6CEADE4670C429600F234606F /* Pods-NubankSimulatorTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A96F5B6C4D136EBC01138C0764B06B63 /* Pods-NubankSimulatorTests-dummy.m */; };
+		DDE417BA9D13D2BB98316DF0512A1944 /* IQBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE67C336F5ADE7067EB51AA71FDBBDAA /* IQBarButtonItem.swift */; };
+		DFD2185FD9E42709AF280AF13EEF6EB6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79CF7D56C5D50C18B2EA0ED106D998C7 /* Foundation.framework */; };
+		E5A5100CDEFFE5A44EEA6D9DF620B6D0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79CF7D56C5D50C18B2EA0ED106D998C7 /* Foundation.framework */; };
+		E8EE6A43A2236A96EA6F14FE40E2BC8E /* Encoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E453EA5779373DE061A688F612026A6E /* Encoder.swift */; };
+		EEF066616EFE6EBC57541C1B92C6770A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79CF7D56C5D50C18B2EA0ED106D998C7 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		081F49E7D0B2EB675E55B26B385393DE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3AF1A4FE1808CDAE51281F7A31DB2A13;
+			remoteInfo = Resolver;
+		};
+		2AA57EEAEF5BD3E37DCECF87308BAA6B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3F91F8CDF5F68F7961359A28741F6C82;
+			remoteInfo = KeyValueStorage;
+		};
+		35BF66BE8DCE06BAD66CAAAF2DD25BC6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B490E7485944099E16C9CBD79119D1D4;
+			remoteInfo = IQKeyboardManagerSwift;
+		};
+		4A0E71800379854612B021EBE13D2434 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B490E7485944099E16C9CBD79119D1D4;
+			remoteInfo = IQKeyboardManagerSwift;
+		};
+		BBF7F68850AA9727E59CDB96D97A6270 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D2F3CF484ED2E9A8917D722D6AB2A84F;
+			remoteInfo = "Pods-NubankSimulator";
+		};
+		C1B6D37547D79034E95FF093E8E1F6E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3AF1A4FE1808CDAE51281F7A31DB2A13;
+			remoteInfo = Resolver;
+		};
+		DB4047CD06C5A81AF5F97655080908FA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3F91F8CDF5F68F7961359A28741F6C82;
+			remoteInfo = KeyValueStorage;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00D707665B29120CFD415F736C5B44E4 /* IQTextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQTextView.swift; path = IQKeyboardManagerSwift/IQTextView/IQTextView.swift; sourceTree = "<group>"; };
+		04D60AC13D33197690A05C641925DDDA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		0634DF28B3D991EB5E6BE50CEDCCB6C4 /* IQKeyboardManagerConstants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQKeyboardManagerConstants.swift; path = IQKeyboardManagerSwift/Constants/IQKeyboardManagerConstants.swift; sourceTree = "<group>"; };
+		06FA460B5838D0D4B0CC8CC4146D04C6 /* IQKeyboardManagerSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "IQKeyboardManagerSwift-dummy.m"; sourceTree = "<group>"; };
+		0AAD8F3FB49B0EF5FEA20D038DC5FF3B /* KeyValueStorage-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KeyValueStorage-dummy.m"; sourceTree = "<group>"; };
+		0F06A356CFFB22E977335AB3D9EB8D3A /* Pods-NubankSimulator-NubankSimulatorUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NubankSimulator-NubankSimulatorUITests.release.xcconfig"; sourceTree = "<group>"; };
+		141FC5C4AEF7777B0AF0AE5C24109026 /* KeyValueStorage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeyValueStorage.swift; path = Classes/Implementation/KeyValueStorage.swift; sourceTree = "<group>"; };
+		142B0466FF6137700343B403B19E5969 /* Pods-NubankSimulator-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NubankSimulator-frameworks.sh"; sourceTree = "<group>"; };
+		14C2723FFC5764768AB860B3AF58D1AE /* IQKeyboardManagerSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = IQKeyboardManagerSwift.modulemap; sourceTree = "<group>"; };
+		14F4F8E112637F19BC9AD3A41A67BFFE /* IQToolbar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQToolbar.swift; path = IQKeyboardManagerSwift/IQToolbar/IQToolbar.swift; sourceTree = "<group>"; };
+		1549AA29EE68DF51663DA6F2FCFF75E9 /* Pods-NubankSimulator-NubankSimulatorUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NubankSimulator-NubankSimulatorUITests-umbrella.h"; sourceTree = "<group>"; };
+		171337378FA9A6639B140B6D32A65F03 /* IQUIScrollView+Additions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQUIScrollView+Additions.swift"; path = "IQKeyboardManagerSwift/Categories/IQUIScrollView+Additions.swift"; sourceTree = "<group>"; };
+		25C7F14DBD8F27B21CA9DECE7611A163 /* Pods-NubankSimulatorTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-NubankSimulatorTests.modulemap"; sourceTree = "<group>"; };
+		2A90A979DC43E8440BE2A8DA29933D13 /* Pods-NubankSimulator-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NubankSimulator-Info.plist"; sourceTree = "<group>"; };
+		30AAC45986C095D67F4895FB2F8184EA /* Pods-NubankSimulator-NubankSimulatorUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NubankSimulator-NubankSimulatorUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		32EE76F9E49F7B700E7F41157C69328E /* Pods-NubankSimulatorTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NubankSimulatorTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		342CEACF3830461EC891405914F94925 /* IQKeyboardReturnKeyHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQKeyboardReturnKeyHandler.swift; path = IQKeyboardManagerSwift/IQKeyboardReturnKeyHandler.swift; sourceTree = "<group>"; };
+		3A2C2196233748648BC87226ABDB137A /* Pods_NubankSimulator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_NubankSimulator.framework; path = "Pods-NubankSimulator.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3AAC4691C38802C9D24E7E51CD5A5410 /* KeyValueStorage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = KeyValueStorage.framework; path = KeyValueStorage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3EC69148ADFDC296609EE1FF6395FB84 /* IQKeyboardManagerSwift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "IQKeyboardManagerSwift-Info.plist"; sourceTree = "<group>"; };
+		42DD4773FB9E5C5FE104DC55842FC725 /* KeyValueStorage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KeyValueStorage.release.xcconfig; sourceTree = "<group>"; };
+		4852364046BB933BBDF2B9D53116DEF3 /* Resolver-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Resolver-prefix.pch"; sourceTree = "<group>"; };
+		4960E3BF32BF5FCCB2CB3BD08DB1427D /* Pods-NubankSimulator-NubankSimulatorUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-NubankSimulator-NubankSimulatorUITests.modulemap"; sourceTree = "<group>"; };
+		4C0D238534457239C16A03C568132ADA /* Resolver.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Resolver.swift; path = Sources/Resolver/Resolver.swift; sourceTree = "<group>"; };
+		4D463893947257A8BFC08753CE13E57E /* Pods-NubankSimulator-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NubankSimulator-umbrella.h"; sourceTree = "<group>"; };
+		4D9481B18EDDD83DBBD24FE8BFBDCFCF /* KeyValueStorage-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KeyValueStorage-prefix.pch"; sourceTree = "<group>"; };
+		5662584CE054C4DE2A6DE5F172C8A4F4 /* IQNSArray+Sort.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQNSArray+Sort.swift"; path = "IQKeyboardManagerSwift/Categories/IQNSArray+Sort.swift"; sourceTree = "<group>"; };
+		5A178B82F63EB835C37AED6834A30095 /* Pods-NubankSimulatorTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NubankSimulatorTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5A8396E2D8FE011277F34FC3B94BFD22 /* IQInvocation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQInvocation.swift; path = IQKeyboardManagerSwift/IQToolbar/IQInvocation.swift; sourceTree = "<group>"; };
+		5C001346C4E3AC9873C036C764A05A51 /* Pods-NubankSimulator.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-NubankSimulator.modulemap"; sourceTree = "<group>"; };
+		648F234AFE98E4857FBAD4155514A2F1 /* Decoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Decoder.swift; path = Classes/Protocols/Decoder.swift; sourceTree = "<group>"; };
+		7015FDE175B24EE8124063B03EE6F80F /* Pods-NubankSimulator-NubankSimulatorUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NubankSimulator-NubankSimulatorUITests-frameworks.sh"; sourceTree = "<group>"; };
+		7108248ECCB8DC3CF39E06AA6C71060E /* IQKeyboardManagerSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = IQKeyboardManagerSwift.debug.xcconfig; sourceTree = "<group>"; };
+		715354409586099381DAD864E391F1C8 /* Pods-NubankSimulatorTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NubankSimulatorTests-umbrella.h"; sourceTree = "<group>"; };
+		71FD1955F932C3342793A5C8D9778AC7 /* Resolver.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Resolver.release.xcconfig; sourceTree = "<group>"; };
+		79CF7D56C5D50C18B2EA0ED106D998C7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		7A319F5F2912EB715EC0612BB098EF25 /* IQKeyboardManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQKeyboardManager.swift; path = IQKeyboardManagerSwift/IQKeyboardManager.swift; sourceTree = "<group>"; };
+		7C3F90E85E2C8A722927A41714EB597C /* IQKeyboardManagerSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IQKeyboardManagerSwift-prefix.pch"; sourceTree = "<group>"; };
+		7E044708B29BB0AF679F1C40FC049F3F /* Pods_NubankSimulator_NubankSimulatorUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_NubankSimulator_NubankSimulatorUITests.framework; path = "Pods-NubankSimulator-NubankSimulatorUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E0C457BD7C04CF2125C2A882CE3BAE1 /* IQUITextFieldView+Additions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQUITextFieldView+Additions.swift"; path = "IQKeyboardManagerSwift/Categories/IQUITextFieldView+Additions.swift"; sourceTree = "<group>"; };
+		800C751DDBC56A63336D62548685E013 /* Pods-NubankSimulator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NubankSimulator.debug.xcconfig"; sourceTree = "<group>"; };
+		83E1CE9897F7DCE551330FAF9FBAC1DE /* Pods-NubankSimulatorTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NubankSimulatorTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		840FA0B75AF62912A30DDC66B647ED98 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		88759D614E7C14D8635DED3D4179A12D /* IQPreviousNextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQPreviousNextView.swift; path = IQKeyboardManagerSwift/IQToolbar/IQPreviousNextView.swift; sourceTree = "<group>"; };
+		8A8EF86FF9A9794377091632F76479FA /* KeyValueStorage-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "KeyValueStorage-Info.plist"; sourceTree = "<group>"; };
+		8CD0E6861C8481161E0D193B9C5EB5E4 /* Pods-NubankSimulatorTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NubankSimulatorTests-Info.plist"; sourceTree = "<group>"; };
+		8D75B817E8114200CBAF9EA43A39519E /* Resolver-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Resolver-Info.plist"; sourceTree = "<group>"; };
+		91E6C0AA40C294084C4AE4F07C4ACA65 /* Resolver-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Resolver-umbrella.h"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9DD8FDBFB8A8942F0B45FA4843953471 /* Pods-NubankSimulator-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NubankSimulator-acknowledgements.markdown"; sourceTree = "<group>"; };
+		9E9568BCC37FB7FD4E600D452873CFC6 /* KeyValueStorageKey.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeyValueStorageKey.swift; path = Classes/Models/KeyValueStorageKey.swift; sourceTree = "<group>"; };
+		A231263C59F53D2D80C5F6DA11FEFD96 /* Resolver.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Resolver.modulemap; sourceTree = "<group>"; };
+		A42DBD2F42D55606EEBA514009498B87 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		A5D5D003BD4396B22F99E33C6AA499CC /* IQKeyboardManagerConstantsInternal.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQKeyboardManagerConstantsInternal.swift; path = IQKeyboardManagerSwift/Constants/IQKeyboardManagerConstantsInternal.swift; sourceTree = "<group>"; };
+		A71277B273B18AB41AB7707CEE02F80D /* KeyValueStorage-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KeyValueStorage-umbrella.h"; sourceTree = "<group>"; };
+		A8E950A16D00F649C54FFB30F81D7842 /* IQKeyboardManagerSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = IQKeyboardManagerSwift.framework; path = IQKeyboardManagerSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A96F5B6C4D136EBC01138C0764B06B63 /* Pods-NubankSimulatorTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NubankSimulatorTests-dummy.m"; sourceTree = "<group>"; };
+		AB2BD28D734E886E78C324B0B6348A78 /* KeyValueStorageType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeyValueStorageType.swift; path = Classes/Models/KeyValueStorageType.swift; sourceTree = "<group>"; };
+		AF6093CA264EBB801EA45C5FDDFBD3BE /* IQKeyboardManagerSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = IQKeyboardManagerSwift.release.xcconfig; sourceTree = "<group>"; };
+		B07B803482B650A496205EDE45C828E9 /* Pods-NubankSimulator-NubankSimulatorUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NubankSimulator-NubankSimulatorUITests-Info.plist"; sourceTree = "<group>"; };
+		B34B949612DE8FFB5FCC5FB9A3FE6927 /* Pods-NubankSimulator-NubankSimulatorUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NubankSimulator-NubankSimulatorUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		B7423CC32E9B3184119225232CD10960 /* IQKeyboardManagerSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IQKeyboardManagerSwift-umbrella.h"; sourceTree = "<group>"; };
+		BE84770161E84907E300F9E21D49C21A /* IQUIViewController+Additions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQUIViewController+Additions.swift"; path = "IQKeyboardManagerSwift/Categories/IQUIViewController+Additions.swift"; sourceTree = "<group>"; };
+		C08AA25303A62EFFC2D4A30A63908822 /* Pods-NubankSimulator-NubankSimulatorUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NubankSimulator-NubankSimulatorUITests-dummy.m"; sourceTree = "<group>"; };
+		C7A500B76A0039E2E5C8B889287160A4 /* KeyValueStorage.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = KeyValueStorage.modulemap; sourceTree = "<group>"; };
+		CB41B5F080D7A4A2B6913D2297A37C9E /* IQTitleBarButtonItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQTitleBarButtonItem.swift; path = IQKeyboardManagerSwift/IQToolbar/IQTitleBarButtonItem.swift; sourceTree = "<group>"; };
+		CE9EACBCEC41DB73671D70E9E0891E06 /* IQUIView+IQKeyboardToolbar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQUIView+IQKeyboardToolbar.swift"; path = "IQKeyboardManagerSwift/IQToolbar/IQUIView+IQKeyboardToolbar.swift"; sourceTree = "<group>"; };
+		DDF880BFF494F8AD8A0E65486A441F8A /* Resolver.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Resolver.debug.xcconfig; sourceTree = "<group>"; };
+		DDFD6E1EE7FB75CC6E6CEB7213F706BD /* Resolver.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Resolver.framework; path = Resolver.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE67C336F5ADE7067EB51AA71FDBBDAA /* IQBarButtonItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQBarButtonItem.swift; path = IQKeyboardManagerSwift/IQToolbar/IQBarButtonItem.swift; sourceTree = "<group>"; };
+		E2DD15EEBFE075B6250223B669BDBBAB /* Pods-NubankSimulator-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NubankSimulator-acknowledgements.plist"; sourceTree = "<group>"; };
+		E453EA5779373DE061A688F612026A6E /* Encoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Encoder.swift; path = Classes/Protocols/Encoder.swift; sourceTree = "<group>"; };
+		E4807539E857B463E2DC73C4AD49AEEB /* KeyValueStorage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KeyValueStorage.debug.xcconfig; sourceTree = "<group>"; };
+		EB8FD777A0ED6EA2599A87ED9AD8A651 /* Pods-NubankSimulator-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NubankSimulator-dummy.m"; sourceTree = "<group>"; };
+		EBABB6B4D667DF6214BD51275CED0486 /* Pods-NubankSimulator-NubankSimulatorUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NubankSimulator-NubankSimulatorUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		EECA939EC2A6CEBDDB47E238090D3C7F /* Pods-NubankSimulator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NubankSimulator.release.xcconfig"; sourceTree = "<group>"; };
+		F4CF2EA6953F31AECD791EAE394AC774 /* KeyValueStorageProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeyValueStorageProtocol.swift; path = Classes/Protocols/KeyValueStorageProtocol.swift; sourceTree = "<group>"; };
+		F67352F6262742CBD5DABB64C092CF0D /* IQUIView+Hierarchy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQUIView+Hierarchy.swift"; path = "IQKeyboardManagerSwift/Categories/IQUIView+Hierarchy.swift"; sourceTree = "<group>"; };
+		F72AFBF63DAAC8BE29A11C2B7FBFB2BF /* Pods_NubankSimulatorTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_NubankSimulatorTests.framework; path = "Pods-NubankSimulatorTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA527886F116A961BA603F911AB32721 /* Pods-NubankSimulatorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NubankSimulatorTests.release.xcconfig"; sourceTree = "<group>"; };
+		FFB351B593791E792620FACC25823215 /* Resolver-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Resolver-dummy.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2C2292E431F316076553538B7FBB63C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33483C1C427390BED308CBAB3EEEE277 /* CoreGraphics.framework in Frameworks */,
+				EEF066616EFE6EBC57541C1B92C6770A /* Foundation.framework in Frameworks */,
+				2358B57B83BE526AED64799C6892B2CE /* QuartzCore.framework in Frameworks */,
+				38EE0727B33503FD20E1363988E46AB2 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		852D9CCC84F5B4B9219E60704837F5A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0869014244D95B32E684E4AFA379CF9D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F131CDAA09DC68EF9FEE347BCE21A68 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFD2185FD9E42709AF280AF13EEF6EB6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B747C191C4D3F8D09703C1328B750B5F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5A5100CDEFFE5A44EEA6D9DF620B6D0 /* Foundation.framework in Frameworks */,
+				6DC9A0AB778FAB8126E9901CE09C4056 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6CBB280B5CE2AF7670CA92EE860CDB5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B5336371B73A444D419CC7FFDDFD2BA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD85B5917B3721C6685A9684CBF3BFFF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD49A9978EBC37801F685681937F3F16 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		12D889D07A474AC3A93DDF8600083E01 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C7A500B76A0039E2E5C8B889287160A4 /* KeyValueStorage.modulemap */,
+				0AAD8F3FB49B0EF5FEA20D038DC5FF3B /* KeyValueStorage-dummy.m */,
+				8A8EF86FF9A9794377091632F76479FA /* KeyValueStorage-Info.plist */,
+				4D9481B18EDDD83DBBD24FE8BFBDCFCF /* KeyValueStorage-prefix.pch */,
+				A71277B273B18AB41AB7707CEE02F80D /* KeyValueStorage-umbrella.h */,
+				E4807539E857B463E2DC73C4AD49AEEB /* KeyValueStorage.debug.xcconfig */,
+				42DD4773FB9E5C5FE104DC55842FC725 /* KeyValueStorage.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/KeyValueStorage";
+			sourceTree = "<group>";
+		};
+		2E067CFD7B1DB1791639489202BC31C9 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A231263C59F53D2D80C5F6DA11FEFD96 /* Resolver.modulemap */,
+				FFB351B593791E792620FACC25823215 /* Resolver-dummy.m */,
+				8D75B817E8114200CBAF9EA43A39519E /* Resolver-Info.plist */,
+				4852364046BB933BBDF2B9D53116DEF3 /* Resolver-prefix.pch */,
+				91E6C0AA40C294084C4AE4F07C4ACA65 /* Resolver-umbrella.h */,
+				DDF880BFF494F8AD8A0E65486A441F8A /* Resolver.debug.xcconfig */,
+				71FD1955F932C3342793A5C8D9778AC7 /* Resolver.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Resolver";
+			sourceTree = "<group>";
+		};
+		385C4A08F1F4ACD83C79A3E1458C60F4 /* Pods-NubankSimulator */ = {
+			isa = PBXGroup;
+			children = (
+				5C001346C4E3AC9873C036C764A05A51 /* Pods-NubankSimulator.modulemap */,
+				9DD8FDBFB8A8942F0B45FA4843953471 /* Pods-NubankSimulator-acknowledgements.markdown */,
+				E2DD15EEBFE075B6250223B669BDBBAB /* Pods-NubankSimulator-acknowledgements.plist */,
+				EB8FD777A0ED6EA2599A87ED9AD8A651 /* Pods-NubankSimulator-dummy.m */,
+				142B0466FF6137700343B403B19E5969 /* Pods-NubankSimulator-frameworks.sh */,
+				2A90A979DC43E8440BE2A8DA29933D13 /* Pods-NubankSimulator-Info.plist */,
+				4D463893947257A8BFC08753CE13E57E /* Pods-NubankSimulator-umbrella.h */,
+				800C751DDBC56A63336D62548685E013 /* Pods-NubankSimulator.debug.xcconfig */,
+				EECA939EC2A6CEBDDB47E238090D3C7F /* Pods-NubankSimulator.release.xcconfig */,
+			);
+			name = "Pods-NubankSimulator";
+			path = "Target Support Files/Pods-NubankSimulator";
+			sourceTree = "<group>";
+		};
+		5AA3837B91F57FF8B9B7659D3DC539A7 /* KeyValueStorage */ = {
+			isa = PBXGroup;
+			children = (
+				648F234AFE98E4857FBAD4155514A2F1 /* Decoder.swift */,
+				E453EA5779373DE061A688F612026A6E /* Encoder.swift */,
+				141FC5C4AEF7777B0AF0AE5C24109026 /* KeyValueStorage.swift */,
+				9E9568BCC37FB7FD4E600D452873CFC6 /* KeyValueStorageKey.swift */,
+				F4CF2EA6953F31AECD791EAE394AC774 /* KeyValueStorageProtocol.swift */,
+				AB2BD28D734E886E78C324B0B6348A78 /* KeyValueStorageType.swift */,
+				12D889D07A474AC3A93DDF8600083E01 /* Support Files */,
+			);
+			name = KeyValueStorage;
+			path = KeyValueStorage;
+			sourceTree = "<group>";
+		};
+		698E34FDBC1D713F2A54C328929E9D60 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9F11CC41A3A231875CCB65AABA9D3A62 /* IQKeyboardManagerSwift */,
+				5AA3837B91F57FF8B9B7659D3DC539A7 /* KeyValueStorage */,
+				AFA096FC1FF5E71D8E126421687741A6 /* Resolver */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6F9C4FC55068DBE0DB0C82EA452C5E6D /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				14C2723FFC5764768AB860B3AF58D1AE /* IQKeyboardManagerSwift.modulemap */,
+				06FA460B5838D0D4B0CC8CC4146D04C6 /* IQKeyboardManagerSwift-dummy.m */,
+				3EC69148ADFDC296609EE1FF6395FB84 /* IQKeyboardManagerSwift-Info.plist */,
+				7C3F90E85E2C8A722927A41714EB597C /* IQKeyboardManagerSwift-prefix.pch */,
+				B7423CC32E9B3184119225232CD10960 /* IQKeyboardManagerSwift-umbrella.h */,
+				7108248ECCB8DC3CF39E06AA6C71060E /* IQKeyboardManagerSwift.debug.xcconfig */,
+				AF6093CA264EBB801EA45C5FDDFBD3BE /* IQKeyboardManagerSwift.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/IQKeyboardManagerSwift";
+			sourceTree = "<group>";
+		};
+		896F7C194B89AF8465DFEEB4A956502F /* Pods-NubankSimulator-NubankSimulatorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4960E3BF32BF5FCCB2CB3BD08DB1427D /* Pods-NubankSimulator-NubankSimulatorUITests.modulemap */,
+				30AAC45986C095D67F4895FB2F8184EA /* Pods-NubankSimulator-NubankSimulatorUITests-acknowledgements.markdown */,
+				EBABB6B4D667DF6214BD51275CED0486 /* Pods-NubankSimulator-NubankSimulatorUITests-acknowledgements.plist */,
+				C08AA25303A62EFFC2D4A30A63908822 /* Pods-NubankSimulator-NubankSimulatorUITests-dummy.m */,
+				7015FDE175B24EE8124063B03EE6F80F /* Pods-NubankSimulator-NubankSimulatorUITests-frameworks.sh */,
+				B07B803482B650A496205EDE45C828E9 /* Pods-NubankSimulator-NubankSimulatorUITests-Info.plist */,
+				1549AA29EE68DF51663DA6F2FCFF75E9 /* Pods-NubankSimulator-NubankSimulatorUITests-umbrella.h */,
+				B34B949612DE8FFB5FCC5FB9A3FE6927 /* Pods-NubankSimulator-NubankSimulatorUITests.debug.xcconfig */,
+				0F06A356CFFB22E977335AB3D9EB8D3A /* Pods-NubankSimulator-NubankSimulatorUITests.release.xcconfig */,
+			);
+			name = "Pods-NubankSimulator-NubankSimulatorUITests";
+			path = "Target Support Files/Pods-NubankSimulator-NubankSimulatorUITests";
+			sourceTree = "<group>";
+		};
+		9F11CC41A3A231875CCB65AABA9D3A62 /* IQKeyboardManagerSwift */ = {
+			isa = PBXGroup;
+			children = (
+				DE67C336F5ADE7067EB51AA71FDBBDAA /* IQBarButtonItem.swift */,
+				5A8396E2D8FE011277F34FC3B94BFD22 /* IQInvocation.swift */,
+				7A319F5F2912EB715EC0612BB098EF25 /* IQKeyboardManager.swift */,
+				0634DF28B3D991EB5E6BE50CEDCCB6C4 /* IQKeyboardManagerConstants.swift */,
+				A5D5D003BD4396B22F99E33C6AA499CC /* IQKeyboardManagerConstantsInternal.swift */,
+				342CEACF3830461EC891405914F94925 /* IQKeyboardReturnKeyHandler.swift */,
+				5662584CE054C4DE2A6DE5F172C8A4F4 /* IQNSArray+Sort.swift */,
+				88759D614E7C14D8635DED3D4179A12D /* IQPreviousNextView.swift */,
+				00D707665B29120CFD415F736C5B44E4 /* IQTextView.swift */,
+				CB41B5F080D7A4A2B6913D2297A37C9E /* IQTitleBarButtonItem.swift */,
+				14F4F8E112637F19BC9AD3A41A67BFFE /* IQToolbar.swift */,
+				171337378FA9A6639B140B6D32A65F03 /* IQUIScrollView+Additions.swift */,
+				7E0C457BD7C04CF2125C2A882CE3BAE1 /* IQUITextFieldView+Additions.swift */,
+				F67352F6262742CBD5DABB64C092CF0D /* IQUIView+Hierarchy.swift */,
+				CE9EACBCEC41DB73671D70E9E0891E06 /* IQUIView+IQKeyboardToolbar.swift */,
+				BE84770161E84907E300F9E21D49C21A /* IQUIViewController+Additions.swift */,
+				6F9C4FC55068DBE0DB0C82EA452C5E6D /* Support Files */,
+			);
+			name = IQKeyboardManagerSwift;
+			path = IQKeyboardManagerSwift;
+			sourceTree = "<group>";
+		};
+		A37A6DC68EB4A871FED7869FE95975EA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A8E950A16D00F649C54FFB30F81D7842 /* IQKeyboardManagerSwift.framework */,
+				3AAC4691C38802C9D24E7E51CD5A5410 /* KeyValueStorage.framework */,
+				3A2C2196233748648BC87226ABDB137A /* Pods_NubankSimulator.framework */,
+				7E044708B29BB0AF679F1C40FC049F3F /* Pods_NubankSimulator_NubankSimulatorUITests.framework */,
+				F72AFBF63DAAC8BE29A11C2B7FBFB2BF /* Pods_NubankSimulatorTests.framework */,
+				DDFD6E1EE7FB75CC6E6CEB7213F706BD /* Resolver.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AEC728852C93875344D72BFDD086D4FA /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				385C4A08F1F4ACD83C79A3E1458C60F4 /* Pods-NubankSimulator */,
+				896F7C194B89AF8465DFEEB4A956502F /* Pods-NubankSimulator-NubankSimulatorUITests */,
+				B2E07BBE4A1D4602A45795852935804A /* Pods-NubankSimulatorTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		AFA096FC1FF5E71D8E126421687741A6 /* Resolver */ = {
+			isa = PBXGroup;
+			children = (
+				4C0D238534457239C16A03C568132ADA /* Resolver.swift */,
+				2E067CFD7B1DB1791639489202BC31C9 /* Support Files */,
+			);
+			name = Resolver;
+			path = Resolver;
+			sourceTree = "<group>";
+		};
+		B2E07BBE4A1D4602A45795852935804A /* Pods-NubankSimulatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				25C7F14DBD8F27B21CA9DECE7611A163 /* Pods-NubankSimulatorTests.modulemap */,
+				83E1CE9897F7DCE551330FAF9FBAC1DE /* Pods-NubankSimulatorTests-acknowledgements.markdown */,
+				32EE76F9E49F7B700E7F41157C69328E /* Pods-NubankSimulatorTests-acknowledgements.plist */,
+				A96F5B6C4D136EBC01138C0764B06B63 /* Pods-NubankSimulatorTests-dummy.m */,
+				8CD0E6861C8481161E0D193B9C5EB5E4 /* Pods-NubankSimulatorTests-Info.plist */,
+				715354409586099381DAD864E391F1C8 /* Pods-NubankSimulatorTests-umbrella.h */,
+				5A178B82F63EB835C37AED6834A30095 /* Pods-NubankSimulatorTests.debug.xcconfig */,
+				FA527886F116A961BA603F911AB32721 /* Pods-NubankSimulatorTests.release.xcconfig */,
+			);
+			name = "Pods-NubankSimulatorTests";
+			path = "Target Support Files/Pods-NubankSimulatorTests";
+			sourceTree = "<group>";
+		};
+		BA4F31F07263C99FC76E66D632A59F09 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F9D206BABE81E6BF0B9B23880B238CC7 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				BA4F31F07263C99FC76E66D632A59F09 /* Frameworks */,
+				698E34FDBC1D713F2A54C328929E9D60 /* Pods */,
+				A37A6DC68EB4A871FED7869FE95975EA /* Products */,
+				AEC728852C93875344D72BFDD086D4FA /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		F9D206BABE81E6BF0B9B23880B238CC7 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				840FA0B75AF62912A30DDC66B647ED98 /* CoreGraphics.framework */,
+				79CF7D56C5D50C18B2EA0ED106D998C7 /* Foundation.framework */,
+				A42DBD2F42D55606EEBA514009498B87 /* QuartzCore.framework */,
+				04D60AC13D33197690A05C641925DDDA /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		27E3AC3ADFD3FC1C480FDAD29A291140 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18C11382B92A5DFCBD7356AE97C59CAE /* Pods-NubankSimulatorTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3233095E362A4CA82DC7154B12B0642D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22EB5564CB73055DCB6A0CEC6911CB09 /* KeyValueStorage-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7DFEA998FD155E27A3350C3656C16E0F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC4AAD022A3A592FDC28E319FD5708AC /* Pods-NubankSimulator-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FBBE642409AC86DE3052DEC8DC0E1BB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99F527F21B76919827A38E227C754A42 /* Resolver-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0021C49D924E72556E419889B8D5931 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00EED39422F813545166EF21A167BD66 /* Pods-NubankSimulator-NubankSimulatorUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4A6429FF0F9608A16E4D96813E85F23 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62A85277D0462C43B80A05E8822794BB /* IQKeyboardManagerSwift-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0F62CC5EDC3D007D6EBDF8CA6653236D /* Pods-NubankSimulator-NubankSimulatorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7BA713483A44BA4509000DD6402FA1BC /* Build configuration list for PBXNativeTarget "Pods-NubankSimulator-NubankSimulatorUITests" */;
+			buildPhases = (
+				B0021C49D924E72556E419889B8D5931 /* Headers */,
+				C798AD75E4885FD2797978BC6B38495A /* Sources */,
+				852D9CCC84F5B4B9219E60704837F5A2 /* Frameworks */,
+				4759027B446C8D976B3FFF063E71C000 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4A4C5948F41DD269F6E82F68B338C8B3 /* PBXTargetDependency */,
+				59175D04181D18257EB17D2CB16908D4 /* PBXTargetDependency */,
+				4E2D2A9EF3D3849D394BD34BE8F6DDE6 /* PBXTargetDependency */,
+			);
+			name = "Pods-NubankSimulator-NubankSimulatorUITests";
+			productName = "Pods-NubankSimulator-NubankSimulatorUITests";
+			productReference = 7E044708B29BB0AF679F1C40FC049F3F /* Pods_NubankSimulator_NubankSimulatorUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		321E53BB7FFA98EBE4060485B977F801 /* Pods-NubankSimulatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8685A0D98F73A9F5B729B9047169F617 /* Build configuration list for PBXNativeTarget "Pods-NubankSimulatorTests" */;
+			buildPhases = (
+				27E3AC3ADFD3FC1C480FDAD29A291140 /* Headers */,
+				31F528791C0DD8CE3FD31D9E77A5A96F /* Sources */,
+				9F131CDAA09DC68EF9FEE347BCE21A68 /* Frameworks */,
+				36BC2911011D4829F42DBB2F8BDC8D73 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				40FF298FD921595EAAD38E56842F0A30 /* PBXTargetDependency */,
+			);
+			name = "Pods-NubankSimulatorTests";
+			productName = "Pods-NubankSimulatorTests";
+			productReference = F72AFBF63DAAC8BE29A11C2B7FBFB2BF /* Pods_NubankSimulatorTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		3AF1A4FE1808CDAE51281F7A31DB2A13 /* Resolver */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A4F520E2D8E5AC5E974A0AAFC2000EE8 /* Build configuration list for PBXNativeTarget "Resolver" */;
+			buildPhases = (
+				9FBBE642409AC86DE3052DEC8DC0E1BB /* Headers */,
+				FC331321E05C0219B941645C702575DE /* Sources */,
+				B747C191C4D3F8D09703C1328B750B5F /* Frameworks */,
+				11CE9819B20D054FF7E7FA902A3635B6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Resolver;
+			productName = Resolver;
+			productReference = DDFD6E1EE7FB75CC6E6CEB7213F706BD /* Resolver.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		3F91F8CDF5F68F7961359A28741F6C82 /* KeyValueStorage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 092AA90BBFCB06B6F8F4ECA2A3E8FC3C /* Build configuration list for PBXNativeTarget "KeyValueStorage" */;
+			buildPhases = (
+				3233095E362A4CA82DC7154B12B0642D /* Headers */,
+				FE465CD1D5EB029E6EC918FDE2B01DF4 /* Sources */,
+				DD85B5917B3721C6685A9684CBF3BFFF /* Frameworks */,
+				26592043ED54F24078C48DB891F6581A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KeyValueStorage;
+			productName = KeyValueStorage;
+			productReference = 3AAC4691C38802C9D24E7E51CD5A5410 /* KeyValueStorage.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B490E7485944099E16C9CBD79119D1D4 /* IQKeyboardManagerSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A7155AE59A19533F60ECE3B4045B01F0 /* Build configuration list for PBXNativeTarget "IQKeyboardManagerSwift" */;
+			buildPhases = (
+				F4A6429FF0F9608A16E4D96813E85F23 /* Headers */,
+				6C02E9CBF87ED8A1C6D8ED4C951F75A4 /* Sources */,
+				2C2292E431F316076553538B7FBB63C3 /* Frameworks */,
+				FAA5DA81F8292820D65F403E941074FC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IQKeyboardManagerSwift;
+			productName = IQKeyboardManagerSwift;
+			productReference = A8E950A16D00F649C54FFB30F81D7842 /* IQKeyboardManagerSwift.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D2F3CF484ED2E9A8917D722D6AB2A84F /* Pods-NubankSimulator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F956B25E033AF378B326AEEA6C358396 /* Build configuration list for PBXNativeTarget "Pods-NubankSimulator" */;
+			buildPhases = (
+				7DFEA998FD155E27A3350C3656C16E0F /* Headers */,
+				2E8852FC2E8412A9102969EF7F952FC6 /* Sources */,
+				D6CBB280B5CE2AF7670CA92EE860CDB5 /* Frameworks */,
+				18323318660A69B6C672C79A32E84491 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A1C04471B5FF5F95E4E2020A935A9B9A /* PBXTargetDependency */,
+				F4338A183A3149CCDE8A24F47D864646 /* PBXTargetDependency */,
+				BD4DE39EEC9EEEAA9DDB325BDD2DE4AB /* PBXTargetDependency */,
+			);
+			name = "Pods-NubankSimulator";
+			productName = "Pods-NubankSimulator";
+			productReference = 3A2C2196233748648BC87226ABDB137A /* Pods_NubankSimulator.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = A37A6DC68EB4A871FED7869FE95975EA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B490E7485944099E16C9CBD79119D1D4 /* IQKeyboardManagerSwift */,
+				3F91F8CDF5F68F7961359A28741F6C82 /* KeyValueStorage */,
+				D2F3CF484ED2E9A8917D722D6AB2A84F /* Pods-NubankSimulator */,
+				0F62CC5EDC3D007D6EBDF8CA6653236D /* Pods-NubankSimulator-NubankSimulatorUITests */,
+				321E53BB7FFA98EBE4060485B977F801 /* Pods-NubankSimulatorTests */,
+				3AF1A4FE1808CDAE51281F7A31DB2A13 /* Resolver */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		11CE9819B20D054FF7E7FA902A3635B6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18323318660A69B6C672C79A32E84491 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26592043ED54F24078C48DB891F6581A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36BC2911011D4829F42DBB2F8BDC8D73 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4759027B446C8D976B3FFF063E71C000 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAA5DA81F8292820D65F403E941074FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2E8852FC2E8412A9102969EF7F952FC6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C0E283E959EB432597F0031FF0C1C1F /* Pods-NubankSimulator-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		31F528791C0DD8CE3FD31D9E77A5A96F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D488EAB6CEADE4670C429600F234606F /* Pods-NubankSimulatorTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C02E9CBF87ED8A1C6D8ED4C951F75A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDE417BA9D13D2BB98316DF0512A1944 /* IQBarButtonItem.swift in Sources */,
+				4F0CF2AD58CF0D08BC090E7AF0DD63D7 /* IQInvocation.swift in Sources */,
+				3F091C427A3E96117C902E8EA143729E /* IQKeyboardManager.swift in Sources */,
+				C04C5F1F1D6B337F87E157B55A747E41 /* IQKeyboardManagerConstants.swift in Sources */,
+				102F4487BC4ADC3C2B56A0470E0A9468 /* IQKeyboardManagerConstantsInternal.swift in Sources */,
+				B98378C55379E1B92897F11A22E38443 /* IQKeyboardManagerSwift-dummy.m in Sources */,
+				4737103B10A1C40C5301D0512B9310E4 /* IQKeyboardReturnKeyHandler.swift in Sources */,
+				259D6FC80BCFE785471F743B1F533970 /* IQNSArray+Sort.swift in Sources */,
+				5044FEAEF09468B6964F9F37A1F1F45C /* IQPreviousNextView.swift in Sources */,
+				7FB3576FD619DD256294BAD7E5F83CBE /* IQTextView.swift in Sources */,
+				C35DCE97EB77150C41E735DB57BD6616 /* IQTitleBarButtonItem.swift in Sources */,
+				980E5594F8DBCE362764AEDC2F086E36 /* IQToolbar.swift in Sources */,
+				C0EB3776478AB80676E488BC9C9CDA3C /* IQUIScrollView+Additions.swift in Sources */,
+				4C069FA7FAA45154DA92CF5DF3BCDCA9 /* IQUITextFieldView+Additions.swift in Sources */,
+				8B439A47AA5FDEF67AD63BDDB808AC5A /* IQUIView+Hierarchy.swift in Sources */,
+				AE3B246482DCD60BA846EA3CE983A1FB /* IQUIView+IQKeyboardToolbar.swift in Sources */,
+				74341DA37F4B926FDF4CB2599CAC547A /* IQUIViewController+Additions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C798AD75E4885FD2797978BC6B38495A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BA512A282585297D906451CA40E3B38 /* Pods-NubankSimulator-NubankSimulatorUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC331321E05C0219B941645C702575DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44CB76BB1F965612E0528A24DEC6F94F /* Resolver.swift in Sources */,
+				D1ECF3D2DE1752522DB1BF306577D2F6 /* Resolver-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE465CD1D5EB029E6EC918FDE2B01DF4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B82B6A904EC5A9EAF2301A9509B456C /* Decoder.swift in Sources */,
+				E8EE6A43A2236A96EA6F14FE40E2BC8E /* Encoder.swift in Sources */,
+				7598D4407817D87F754BDD206A3A6BF3 /* KeyValueStorage.swift in Sources */,
+				5FA892AD2ECA27C54FD9BA1C864B1CC0 /* KeyValueStorage-dummy.m in Sources */,
+				2E172F67504888AA1D2AF55F3F7C8579 /* KeyValueStorageKey.swift in Sources */,
+				4FDCFC5753FFB24C0823982C16416DDC /* KeyValueStorageProtocol.swift in Sources */,
+				BA11A44D3EE2DDACCC559E8BE11EBBA5 /* KeyValueStorageType.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		40FF298FD921595EAAD38E56842F0A30 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-NubankSimulator";
+			target = D2F3CF484ED2E9A8917D722D6AB2A84F /* Pods-NubankSimulator */;
+			targetProxy = BBF7F68850AA9727E59CDB96D97A6270 /* PBXContainerItemProxy */;
+		};
+		4A4C5948F41DD269F6E82F68B338C8B3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = IQKeyboardManagerSwift;
+			target = B490E7485944099E16C9CBD79119D1D4 /* IQKeyboardManagerSwift */;
+			targetProxy = 4A0E71800379854612B021EBE13D2434 /* PBXContainerItemProxy */;
+		};
+		4E2D2A9EF3D3849D394BD34BE8F6DDE6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Resolver;
+			target = 3AF1A4FE1808CDAE51281F7A31DB2A13 /* Resolver */;
+			targetProxy = 081F49E7D0B2EB675E55B26B385393DE /* PBXContainerItemProxy */;
+		};
+		59175D04181D18257EB17D2CB16908D4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = KeyValueStorage;
+			target = 3F91F8CDF5F68F7961359A28741F6C82 /* KeyValueStorage */;
+			targetProxy = DB4047CD06C5A81AF5F97655080908FA /* PBXContainerItemProxy */;
+		};
+		A1C04471B5FF5F95E4E2020A935A9B9A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = IQKeyboardManagerSwift;
+			target = B490E7485944099E16C9CBD79119D1D4 /* IQKeyboardManagerSwift */;
+			targetProxy = 35BF66BE8DCE06BAD66CAAAF2DD25BC6 /* PBXContainerItemProxy */;
+		};
+		BD4DE39EEC9EEEAA9DDB325BDD2DE4AB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Resolver;
+			target = 3AF1A4FE1808CDAE51281F7A31DB2A13 /* Resolver */;
+			targetProxy = C1B6D37547D79034E95FF093E8E1F6E1 /* PBXContainerItemProxy */;
+		};
+		F4338A183A3149CCDE8A24F47D864646 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = KeyValueStorage;
+			target = 3F91F8CDF5F68F7961359A28741F6C82 /* KeyValueStorage */;
+			targetProxy = 2AA57EEAEF5BD3E37DCECF87308BAA6B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0D0F7CABB483694530B9B240F9CDA973 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F06A356CFFB22E977335AB3D9EB8D3A /* Pods-NubankSimulator-NubankSimulatorUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-NubankSimulator-NubankSimulatorUITests/Pods-NubankSimulator-NubankSimulatorUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-NubankSimulator-NubankSimulatorUITests/Pods-NubankSimulator-NubankSimulatorUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3BE7200682DA3DD02079CC5BBF5E56EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7108248ECCB8DC3CF39E06AA6C71060E /* IQKeyboardManagerSwift.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/IQKeyboardManagerSwift/IQKeyboardManagerSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/IQKeyboardManagerSwift/IQKeyboardManagerSwift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/IQKeyboardManagerSwift/IQKeyboardManagerSwift.modulemap";
+				PRODUCT_MODULE_NAME = IQKeyboardManagerSwift;
+				PRODUCT_NAME = IQKeyboardManagerSwift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.3;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4D0AEAFEC378BC26E6CF6FAD9B144520 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 71FD1955F932C3342793A5C8D9778AC7 /* Resolver.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Resolver/Resolver-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Resolver/Resolver-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Resolver/Resolver.modulemap";
+				PRODUCT_MODULE_NAME = Resolver;
+				PRODUCT_NAME = Resolver;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		67E2CC37FAF1B193A7C6FD8B3E7A6D60 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B34B949612DE8FFB5FCC5FB9A3FE6927 /* Pods-NubankSimulator-NubankSimulatorUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-NubankSimulator-NubankSimulatorUITests/Pods-NubankSimulator-NubankSimulatorUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-NubankSimulator-NubankSimulatorUITests/Pods-NubankSimulator-NubankSimulatorUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		68DB29BA2918D702A8E74C4BC0B408E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4807539E857B463E2DC73C4AD49AEEB /* KeyValueStorage.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/KeyValueStorage/KeyValueStorage-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KeyValueStorage/KeyValueStorage-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/KeyValueStorage/KeyValueStorage.modulemap";
+				PRODUCT_MODULE_NAME = KeyValueStorage;
+				PRODUCT_NAME = KeyValueStorage;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.3;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		71BDFE875BA510AF0ED902FBC9B7E428 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A178B82F63EB835C37AED6834A30095 /* Pods-NubankSimulatorTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-NubankSimulatorTests/Pods-NubankSimulatorTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-NubankSimulatorTests/Pods-NubankSimulatorTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		71DAE918E6D48EBBA4B9E2C280EC90E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA527886F116A961BA603F911AB32721 /* Pods-NubankSimulatorTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-NubankSimulatorTests/Pods-NubankSimulatorTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-NubankSimulatorTests/Pods-NubankSimulatorTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		72F097ED13AA15035B88E62896160EF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EECA939EC2A6CEBDDB47E238090D3C7F /* Pods-NubankSimulator.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-NubankSimulator/Pods-NubankSimulator-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-NubankSimulator/Pods-NubankSimulator.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		78D4BF4DE275AD767BDB65B680954E43 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 800C751DDBC56A63336D62548685E013 /* Pods-NubankSimulator.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-NubankSimulator/Pods-NubankSimulator-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-NubankSimulator/Pods-NubankSimulator.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8EA25AE6F7CC0E3636B0383C715DCC22 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DDF880BFF494F8AD8A0E65486A441F8A /* Resolver.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Resolver/Resolver-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Resolver/Resolver-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Resolver/Resolver.modulemap";
+				PRODUCT_MODULE_NAME = Resolver;
+				PRODUCT_NAME = Resolver;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		95607A856795A398FFB76177B56DE3A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		B582322E55A5481988CCB55CEFE57773 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 42DD4773FB9E5C5FE104DC55842FC725 /* KeyValueStorage.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/KeyValueStorage/KeyValueStorage-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KeyValueStorage/KeyValueStorage-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/KeyValueStorage/KeyValueStorage.modulemap";
+				PRODUCT_MODULE_NAME = KeyValueStorage;
+				PRODUCT_NAME = KeyValueStorage;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.3;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D6EECBCE91072E1A06BA3BD2D8E3C244 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		ECD830E9FF60065425D88BB789C29686 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF6093CA264EBB801EA45C5FDDFBD3BE /* IQKeyboardManagerSwift.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/IQKeyboardManagerSwift/IQKeyboardManagerSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/IQKeyboardManagerSwift/IQKeyboardManagerSwift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/IQKeyboardManagerSwift/IQKeyboardManagerSwift.modulemap";
+				PRODUCT_MODULE_NAME = IQKeyboardManagerSwift;
+				PRODUCT_NAME = IQKeyboardManagerSwift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.3;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		092AA90BBFCB06B6F8F4ECA2A3E8FC3C /* Build configuration list for PBXNativeTarget "KeyValueStorage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68DB29BA2918D702A8E74C4BC0B408E2 /* Debug */,
+				B582322E55A5481988CCB55CEFE57773 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95607A856795A398FFB76177B56DE3A8 /* Debug */,
+				D6EECBCE91072E1A06BA3BD2D8E3C244 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7BA713483A44BA4509000DD6402FA1BC /* Build configuration list for PBXNativeTarget "Pods-NubankSimulator-NubankSimulatorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				67E2CC37FAF1B193A7C6FD8B3E7A6D60 /* Debug */,
+				0D0F7CABB483694530B9B240F9CDA973 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8685A0D98F73A9F5B729B9047169F617 /* Build configuration list for PBXNativeTarget "Pods-NubankSimulatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				71BDFE875BA510AF0ED902FBC9B7E428 /* Debug */,
+				71DAE918E6D48EBBA4B9E2C280EC90E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A4F520E2D8E5AC5E974A0AAFC2000EE8 /* Build configuration list for PBXNativeTarget "Resolver" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8EA25AE6F7CC0E3636B0383C715DCC22 /* Debug */,
+				4D0AEAFEC378BC26E6CF6FAD9B144520 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A7155AE59A19533F60ECE3B4045B01F0 /* Build configuration list for PBXNativeTarget "IQKeyboardManagerSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3BE7200682DA3DD02079CC5BBF5E56EB /* Debug */,
+				ECD830E9FF60065425D88BB789C29686 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F956B25E033AF378B326AEEA6C358396 /* Build configuration list for PBXNativeTarget "Pods-NubankSimulator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				78D4BF4DE275AD767BDB65B680954E43 /* Debug */,
+				72F097ED13AA15035B88E62896160EF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
