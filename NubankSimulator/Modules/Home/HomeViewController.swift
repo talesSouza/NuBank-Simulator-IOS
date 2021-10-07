@@ -3,16 +3,15 @@ import UIKit
 class HomeViewController: BaseViewController {
     
     // MARK: - IBOutlets
-    @IBOutlet weak var userNameLabelView: LabelView!
-    @IBOutlet weak var balanceLabelView: LabelView!
-    @IBOutlet weak var totalBalance: LabelView!
+    @IBOutlet weak var mainTableView: UITableView!
+    
 }
 
 // MARK: - Life Cycle
 extension HomeViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
-        setup()
+        registerCells()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -20,18 +19,31 @@ extension HomeViewController {
     }
 }
 
-// MARK: - Setup
+// MARK: - Private Methods
 extension HomeViewController {
     
-    private func setup() {
-        setupLabels()
+    func registerCells() {
+        mainTableView.register(AccountTableViewCell.nib(), forCellReuseIdentifier: AccountTableViewCell.identifier)
+        mainTableView.register(UserTableViewCell.nib(), forCellReuseIdentifier: UserTableViewCell.identifier)
+    }
+}
+
+// MARK: - UITableViewDelegate & UITableViewDataSource
+extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        2
+    }
+    //COLOCAR AS CELLS NAS ROWS
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        switch indexPath {
+        case 1:
+            let cell = mainTableView.dequeueReusableCell(withIdentifier: "AccountTableViewCell") as! AccountTableViewCell
+            return cell
+        default:
+            <#code#>
+        }
     }
     
-    private func setupLabels() {
-        userNameLabelView.set(text: "Olá, Tales", textStyle: TextStyle(color: .white, size: .p18, weight: .semiBold))
-        
-        balanceLabelView.set(text: "home.account".localized, textStyle: TextStyle(color: .black, size: .p22, weight: .semiBold))
-        
-        totalBalance.set(text: "R$ 244.844,39", textStyle: TextStyle(color: .black, size: .p26, weight: .semiBold))
-    }
+    
 }
