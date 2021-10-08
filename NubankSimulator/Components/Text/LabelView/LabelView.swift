@@ -2,7 +2,7 @@ import UIKit
 
 class LabelView: UIView, NibOwnerLoadable {
     
-    // MARK: - Outlets
+    // MARK: - IBOutlets
     @IBOutlet weak var label: UILabel!
     
     // MARK: - Stored Properties

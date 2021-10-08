@@ -218,18 +218,28 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="414" height="119"/>
                                                     <subviews>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M7K-Wa-GuJ" customClass="RoundedCardItem" customModule="NubankSimulator" customModuleProvider="target">
-                                                            <rect key="frame" x="24" y="14.666666666666664" width="60" height="90"/>
+                                                            <rect key="frame" x="104" y="14.666666666666664" width="60" height="90"/>
                                                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="60" id="GCL-LF-lTW"/>
                                                                 <constraint firstAttribute="height" constant="90" id="N5j-r3-zcu"/>
                                                             </constraints>
                                                         </view>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fqb-mJ-xw4" customClass="RoundedCardItem" customModule="NubankSimulator" customModuleProvider="target">
+                                                            <rect key="frame" x="20" y="14.666666666666664" width="60" height="90"/>
+                                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="90" id="sRS-zf-Rea"/>
+                                                                <constraint firstAttribute="width" constant="60" id="vsl-PY-O0F"/>
+                                                            </constraints>
+                                                        </view>
                                                     </subviews>
                                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     <constraints>
-                                                        <constraint firstItem="M7K-Wa-GuJ" firstAttribute="leading" secondItem="d0g-xx-WDB" secondAttribute="leading" constant="24" id="57Q-5C-SZX"/>
                                                         <constraint firstItem="M7K-Wa-GuJ" firstAttribute="centerY" secondItem="d0g-xx-WDB" secondAttribute="centerY" id="9NX-OF-Tvx"/>
+                                                        <constraint firstItem="fqb-mJ-xw4" firstAttribute="centerY" secondItem="d0g-xx-WDB" secondAttribute="centerY" id="GD1-Yn-cb7"/>
+                                                        <constraint firstItem="fqb-mJ-xw4" firstAttribute="leading" secondItem="d0g-xx-WDB" secondAttribute="leading" constant="20" id="KPt-yL-fOe"/>
+                                                        <constraint firstItem="M7K-Wa-GuJ" firstAttribute="leading" secondItem="fqb-mJ-xw4" secondAttribute="trailing" constant="24" id="p7l-pA-hhS"/>
                                                     </constraints>
                                                 </view>
                                             </subviews>
@@ -241,7 +251,8 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="roundedItens" destination="M7K-Wa-GuJ" id="GWE-nO-H5F"/>
+                                            <outlet property="roundedItem" destination="M7K-Wa-GuJ" id="fWD-KE-zTA"/>
+                                            <outlet property="roundedItem2" destination="fqb-mJ-xw4" id="Vy3-xl-qGn"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>

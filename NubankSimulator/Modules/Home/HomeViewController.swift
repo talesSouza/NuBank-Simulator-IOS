@@ -35,10 +35,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
             return cell
         }
         
-//        let cell = tableView.dequeueReusableCell(withIdentifier: "actionOptions") as! ActionOptionsTableViewCell
-//        cell.config()
-//        return cell
-        let cell = tableView.dequeueReusableCell(withIdentifier: "accountBalance") as! AccountBalanceTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "actionOptions", for: indexPath) as! ActionOptionsTableViewCell
         cell.config()
         return cell
         

@@ -1,11 +1,14 @@
 import UIKit
 
 class ActionOptionsTableViewCell: UITableViewCell {
-
-    @IBOutlet weak var roundedItens: RoundedCardItem!
+    
+    @IBOutlet weak var roundedItem: RoundedCardItem!
+    @IBOutlet weak var roundedItem2: RoundedCardItem!
     
     func config() {
-        roundedItens.set(text: "Área Pix", image: UIImage(named: "pix")!)
+        
+        roundedItem.set(text: "pix", image: UIImage(named: "pix")!)
+        roundedItem2.set(text: "nubank", image: UIImage(named: "nuBank")!)
     }
 
 }
