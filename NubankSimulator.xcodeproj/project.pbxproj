@@ -32,6 +32,9 @@
 		1C53F641270E391200A8E54A /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C53F640270E391200A8E54A /* LoginViewModel.swift */; };
 		1C53F643270E391B00A8E54A /* LoginViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C53F642270E391B00A8E54A /* LoginViewState.swift */; };
 		1C53F645270E425200A8E54A /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C53F644270E425200A8E54A /* UIViewController+Extensions.swift */; };
+		1C78ADEC2710A52300DCF5C3 /* UserInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C78ADEB2710A52300DCF5C3 /* UserInfoTableViewCell.swift */; };
+		1C78ADEE2710A52900DCF5C3 /* AccountBalanceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C78ADED2710A52900DCF5C3 /* AccountBalanceTableViewCell.swift */; };
+		1C78ADF42710BFA400DCF5C3 /* ActionOptionsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C78ADF32710BFA400DCF5C3 /* ActionOptionsTableViewCell.swift */; };
 		1C92EE6A270DD85E0067BE37 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1C92EE69270DD85E0067BE37 /* Localizable.strings */; };
 		1C92EE6E270DE2130067BE37 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C92EE6D270DE2130067BE37 /* String+Extensions.swift */; };
 		1C92EE71270DE3AA0067BE37 /* LabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C92EE70270DE3AA0067BE37 /* LabelView.swift */; };
@@ -41,10 +44,6 @@
 		1CEFE014270F5A4B0055D7ED /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CEFE013270F5A4B0055D7ED /* HomeViewController.swift */; };
 		1CEFE017270F89A30055D7ED /* RoundedCardItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CEFE016270F89A30055D7ED /* RoundedCardItem.swift */; };
 		1CEFE019270F89AE0055D7ED /* RoundedItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CEFE018270F89AE0055D7ED /* RoundedItem.xib */; };
-		1CEFE01D270F900D0055D7ED /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CEFE01B270F900D0055D7ED /* UserTableViewCell.swift */; };
-		1CEFE01E270F900D0055D7ED /* UserTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CEFE01C270F900D0055D7ED /* UserTableViewCell.xib */; };
-		1CEFE023270F902F0055D7ED /* AccountTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CEFE021270F902F0055D7ED /* AccountTableViewCell.swift */; };
-		1CEFE024270F902F0055D7ED /* AccountTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CEFE022270F902F0055D7ED /* AccountTableViewCell.xib */; };
 		224957E0C2E115A35340956A /* Pods_NubankSimulator_NubankSimulatorUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E61A916AE66EDB019FFADBC1 /* Pods_NubankSimulator_NubankSimulatorUITests.framework */; };
 		9E50DFD4A79FD7499A2DEF17 /* Pods_NubankSimulatorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68DB54B141F3D782C61E9559 /* Pods_NubankSimulatorTests.framework */; };
 		C01F2103A77247E0296A3F31 /* Pods_NubankSimulator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CEBD810B72AFFED5CC855A4 /* Pods_NubankSimulator.framework */; };
@@ -99,6 +98,9 @@
 		1C53F640270E391200A8E54A /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		1C53F642270E391B00A8E54A /* LoginViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewState.swift; sourceTree = "<group>"; };
 		1C53F644270E425200A8E54A /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		1C78ADEB2710A52300DCF5C3 /* UserInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoTableViewCell.swift; sourceTree = "<group>"; };
+		1C78ADED2710A52900DCF5C3 /* AccountBalanceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountBalanceTableViewCell.swift; sourceTree = "<group>"; };
+		1C78ADF32710BFA400DCF5C3 /* ActionOptionsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionOptionsTableViewCell.swift; sourceTree = "<group>"; };
 		1C92EE69270DD85E0067BE37 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		1C92EE6D270DE2130067BE37 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		1C92EE70270DE3AA0067BE37 /* LabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelView.swift; sourceTree = "<group>"; };
@@ -108,10 +110,6 @@
 		1CEFE013270F5A4B0055D7ED /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		1CEFE016270F89A30055D7ED /* RoundedCardItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCardItem.swift; sourceTree = "<group>"; };
 		1CEFE018270F89AE0055D7ED /* RoundedItem.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RoundedItem.xib; sourceTree = "<group>"; };
-		1CEFE01B270F900D0055D7ED /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
-		1CEFE01C270F900D0055D7ED /* UserTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserTableViewCell.xib; sourceTree = "<group>"; };
-		1CEFE021270F902F0055D7ED /* AccountTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountTableViewCell.swift; sourceTree = "<group>"; };
-		1CEFE022270F902F0055D7ED /* AccountTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AccountTableViewCell.xib; sourceTree = "<group>"; };
 		3CEBD810B72AFFED5CC855A4 /* Pods_NubankSimulator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NubankSimulator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E8A8702DE94558991724D93 /* Pods-NubankSimulator-NubankSimulatorUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NubankSimulator-NubankSimulatorUITests.debug.xcconfig"; path = "Target Support Files/Pods-NubankSimulator-NubankSimulatorUITests/Pods-NubankSimulator-NubankSimulatorUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		68DB54B141F3D782C61E9559 /* Pods_NubankSimulatorTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NubankSimulatorTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -359,6 +357,40 @@
 			path = Login;
 			sourceTree = "<group>";
 		};
+		1C78ADEF2710BAFA00DCF5C3 /* UserCell */ = {
+			isa = PBXGroup;
+			children = (
+				1C78ADEB2710A52300DCF5C3 /* UserInfoTableViewCell.swift */,
+			);
+			path = UserCell;
+			sourceTree = "<group>";
+		};
+		1C78ADF02710BB0600DCF5C3 /* AccountCell */ = {
+			isa = PBXGroup;
+			children = (
+				1C78ADED2710A52900DCF5C3 /* AccountBalanceTableViewCell.swift */,
+			);
+			path = AccountCell;
+			sourceTree = "<group>";
+		};
+		1C78ADF12710BB0D00DCF5C3 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				1C78ADF22710BF9000DCF5C3 /* ActionOptions */,
+				1C78ADEF2710BAFA00DCF5C3 /* UserCell */,
+				1C78ADF02710BB0600DCF5C3 /* AccountCell */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		1C78ADF22710BF9000DCF5C3 /* ActionOptions */ = {
+			isa = PBXGroup;
+			children = (
+				1C78ADF32710BFA400DCF5C3 /* ActionOptionsTableViewCell.swift */,
+			);
+			path = ActionOptions;
+			sourceTree = "<group>";
+		};
 		1C92EE6B270DE1EC0067BE37 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -425,8 +457,8 @@
 		1CEFE012270F4C8E0055D7ED /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				1CEFE01A270F8FD90055D7ED /* HomeCells */,
 				1CEFE013270F5A4B0055D7ED /* HomeViewController.swift */,
+				1C78ADF12710BB0D00DCF5C3 /* Cells */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -438,33 +470,6 @@
 				1CEFE018270F89AE0055D7ED /* RoundedItem.xib */,
 			);
 			path = UI;
-			sourceTree = "<group>";
-		};
-		1CEFE01A270F8FD90055D7ED /* HomeCells */ = {
-			isa = PBXGroup;
-			children = (
-				1CEFE020270F901C0055D7ED /* Account */,
-				1CEFE01F270F90150055D7ED /* User */,
-			);
-			path = HomeCells;
-			sourceTree = "<group>";
-		};
-		1CEFE01F270F90150055D7ED /* User */ = {
-			isa = PBXGroup;
-			children = (
-				1CEFE01B270F900D0055D7ED /* UserTableViewCell.swift */,
-				1CEFE01C270F900D0055D7ED /* UserTableViewCell.xib */,
-			);
-			path = User;
-			sourceTree = "<group>";
-		};
-		1CEFE020270F901C0055D7ED /* Account */ = {
-			isa = PBXGroup;
-			children = (
-				1CEFE021270F902F0055D7ED /* AccountTableViewCell.swift */,
-				1CEFE022270F902F0055D7ED /* AccountTableViewCell.xib */,
-			);
-			path = Account;
 			sourceTree = "<group>";
 		};
 		5DBA46189A389B7987E0C42E /* Pods */ = {
@@ -598,8 +603,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1CEFE01E270F900D0055D7ED /* UserTableViewCell.xib in Resources */,
-				1CEFE024270F902F0055D7ED /* AccountTableViewCell.xib in Resources */,
 				1CEFE019270F89AE0055D7ED /* RoundedItem.xib in Resources */,
 				1C06EE26270CC1D0006329AC /* LaunchScreen.storyboard in Resources */,
 				1C06EE23270CC1D0006329AC /* Assets.xcassets in Resources */,
@@ -734,21 +737,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C78ADEE2710A52900DCF5C3 /* AccountBalanceTableViewCell.swift in Sources */,
 				1C92EE78270DFFDA0067BE37 /* UIView+Extensions.swift in Sources */,
 				1C53F63F270E388A00A8E54A /* LoginServiceProtocol.swift in Sources */,
 				1C0AE6FF270CFC4800D47E4B /* TextStyle.swift in Sources */,
 				1C0AE709270D06B400D47E4B /* CoreModuleDependencies.swift in Sources */,
-				1CEFE01D270F900D0055D7ED /* UserTableViewCell.swift in Sources */,
 				1C53F643270E391B00A8E54A /* LoginViewState.swift in Sources */,
 				1C06EE1E270CC1CF006329AC /* LoginViewController.swift in Sources */,
 				1C11E079270F2F4C0007F557 /* ModuleDependencies.swift in Sources */,
 				1C53F645270E425200A8E54A /* UIViewController+Extensions.swift in Sources */,
 				1C0AE70B270D076A00D47E4B /* ClosureTypes.swift in Sources */,
+				1C78ADEC2710A52300DCF5C3 /* UserInfoTableViewCell.swift in Sources */,
 				1C11E075270F2F0C0007F557 /* LoginModuleDependencies.swift in Sources */,
 				1C92EE6E270DE2130067BE37 /* String+Extensions.swift in Sources */,
 				1CEFE014270F5A4B0055D7ED /* HomeViewController.swift in Sources */,
 				1CED5505270D323F0089F9AB /* NibOwnerLoadable.swift in Sources */,
 				1C53F63D270E387800A8E54A /* LoginService.swift in Sources */,
+				1C78ADF42710BFA400DCF5C3 /* ActionOptionsTableViewCell.swift in Sources */,
 				1C06EE1A270CC1CF006329AC /* AppDelegate.swift in Sources */,
 				1C53F641270E391200A8E54A /* LoginViewModel.swift in Sources */,
 				1C06EE4E270CC382006329AC /* ButtonView.swift in Sources */,
@@ -758,7 +763,6 @@
 				1C0AE707270D063700D47E4B /* BaseViewController.swift in Sources */,
 				1C11E07B270F358D0007F557 /* AppDependencies.swift in Sources */,
 				1C11E072270F2DF10007F557 /* KeyValueStorageKeys+Extensions.swift in Sources */,
-				1CEFE023270F902F0055D7ED /* AccountTableViewCell.swift in Sources */,
 				1C0AE701270D042700D47E4B /* ButtonViewStyle.swift in Sources */,
 				1C06EE1C270CC1CF006329AC /* SceneDelegate.swift in Sources */,
 			);

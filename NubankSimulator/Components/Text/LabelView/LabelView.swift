@@ -16,6 +16,7 @@ class LabelView: UIView, NibOwnerLoadable {
     }
 }
 
+// MARK: - Sets
 extension LabelView {
     
     func set(text: String, textStyle: TextStyle = TextStyle()) {

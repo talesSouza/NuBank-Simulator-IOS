@@ -3,7 +3,7 @@ import UIKit
 class HomeViewController: BaseViewController {
     
     // MARK: - IBOutlets
-    @IBOutlet weak var mainTableView: UITableView!
+    @IBOutlet weak var tableView: UITableView!
     
 }
 
@@ -11,7 +11,6 @@ class HomeViewController: BaseViewController {
 extension HomeViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
-        registerCells()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -20,30 +19,35 @@ extension HomeViewController {
 }
 
 // MARK: - Private Methods
-extension HomeViewController {
-    
-    func registerCells() {
-        mainTableView.register(AccountTableViewCell.nib(), forCellReuseIdentifier: AccountTableViewCell.identifier)
-        mainTableView.register(UserTableViewCell.nib(), forCellReuseIdentifier: UserTableViewCell.identifier)
-    }
-}
-
-// MARK: - UITableViewDelegate & UITableViewDataSource
 extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
-    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        2
+        3
     }
-    //COLOCAR AS CELLS NAS ROWS
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        switch indexPath {
-        case 1:
-            let cell = mainTableView.dequeueReusableCell(withIdentifier: "AccountTableViewCell") as! AccountTableViewCell
+        if indexPath.row < 1 {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "userInfo") as! UserInfoTableViewCell
+            cell.config()
             return cell
-        default:
-            <#code#>
+        } else if indexPath.row < 2 {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "accountBalance") as! AccountBalanceTableViewCell
+            cell.config()
+            return cell
         }
+        
+//        let cell = tableView.dequeueReusableCell(withIdentifier: "actionOptions") as! ActionOptionsTableViewCell
+//        cell.config()
+//        return cell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "accountBalance") as! AccountBalanceTableViewCell
+        cell.config()
+        return cell
+        
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        120
     }
     
     
+   
 }

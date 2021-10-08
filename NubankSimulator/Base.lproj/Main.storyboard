@@ -128,27 +128,141 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Jpf-fh-ea9">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="dWz-ym-hwC">
                                 <rect key="frame" x="0.0" y="96" width="414" height="640"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="userInfo" rowHeight="140" id="G6I-a2-PXL" customClass="UserInfoTableViewCell" customModule="NubankSimulator" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="24.333333969116211" width="414" height="140"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="G6I-a2-PXL" id="PVA-NM-qMx">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="140"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Hk-Tz-GG1">
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="140"/>
+                                                    <subviews>
+                                                        <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zvA-ND-dPA" customClass="LabelView" customModule="NubankSimulator" customModuleProvider="target">
+                                                            <rect key="frame" x="25" y="84" width="168" height="38"/>
+                                                            <color key="backgroundColor" systemColor="systemGray4Color"/>
+                                                        </view>
+                                                    </subviews>
+                                                    <color key="backgroundColor" red="0.36150183889999998" green="0.14369033719999999" blue="0.62526175910000004" alpha="0.87858737239999996" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <constraints>
+                                                        <constraint firstItem="zvA-ND-dPA" firstAttribute="leading" secondItem="8Hk-Tz-GG1" secondAttribute="leading" constant="24" id="4qf-l0-Dkx"/>
+                                                        <constraint firstAttribute="bottom" secondItem="zvA-ND-dPA" secondAttribute="bottom" constant="16" id="zAy-UQ-OM9"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="8Hk-Tz-GG1" firstAttribute="top" secondItem="PVA-NM-qMx" secondAttribute="top" id="8OH-0D-n13"/>
+                                                <constraint firstAttribute="bottom" secondItem="8Hk-Tz-GG1" secondAttribute="bottom" id="Com-br-TJa"/>
+                                                <constraint firstAttribute="trailing" secondItem="8Hk-Tz-GG1" secondAttribute="trailing" id="dgg-G1-12Y"/>
+                                                <constraint firstItem="8Hk-Tz-GG1" firstAttribute="leading" secondItem="PVA-NM-qMx" secondAttribute="leading" id="hiV-dQ-ymc"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="label" destination="zvA-ND-dPA" id="x3I-48-3zu"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="accountBalance" rowHeight="138" id="sc1-sJ-q1K" customClass="AccountBalanceTableViewCell" customModule="NubankSimulator" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="164.33333396911621" width="414" height="138"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="sc1-sJ-q1K" id="if4-c9-Ob3">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="138"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Swe-N2-BSf">
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="138"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                </view>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="TQN-aV-hpX">
+                                                    <rect key="frame" x="24" y="16" width="220" height="106"/>
+                                                    <subviews>
+                                                        <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="o8K-wj-6zT" customClass="LabelView" customModule="NubankSimulator" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="0.0" width="220" height="26"/>
+                                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        </view>
+                                                        <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ua5-AG-xrB" customClass="LabelView" customModule="NubankSimulator" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="56" width="220" height="50"/>
+                                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        </view>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="TQN-aV-hpX" firstAttribute="leading" secondItem="if4-c9-Ob3" secondAttribute="leading" constant="24" id="51N-XC-77v"/>
+                                                <constraint firstItem="Swe-N2-BSf" firstAttribute="leading" secondItem="if4-c9-Ob3" secondAttribute="leading" id="ITX-0t-UEY"/>
+                                                <constraint firstAttribute="trailing" secondItem="Swe-N2-BSf" secondAttribute="trailing" id="fTe-0m-QnS"/>
+                                                <constraint firstAttribute="bottom" secondItem="TQN-aV-hpX" secondAttribute="bottom" constant="16" id="gRn-6g-TFS"/>
+                                                <constraint firstItem="TQN-aV-hpX" firstAttribute="top" secondItem="if4-c9-Ob3" secondAttribute="top" constant="16" id="i4Z-kq-Eal"/>
+                                                <constraint firstItem="TQN-aV-hpX" firstAttribute="centerY" secondItem="if4-c9-Ob3" secondAttribute="centerY" id="l63-Dc-HxV"/>
+                                                <constraint firstItem="Swe-N2-BSf" firstAttribute="top" secondItem="if4-c9-Ob3" secondAttribute="top" id="rHv-z3-kbI"/>
+                                                <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="TQN-aV-hpX" secondAttribute="trailing" constant="150" id="uhy-2t-9WX"/>
+                                                <constraint firstAttribute="bottom" secondItem="Swe-N2-BSf" secondAttribute="bottom" id="y8M-fJ-NoP"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="accountLabelView" destination="o8K-wj-6zT" id="e5G-oZ-URc"/>
+                                            <outlet property="balanceLabelView" destination="ua5-AG-xrB" id="bYh-72-iQt"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="actionOptions" rowHeight="119" id="RAl-hh-eYd" customClass="ActionOptionsTableViewCell" customModule="NubankSimulator" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="302.33333396911621" width="414" height="119"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="RAl-hh-eYd" id="JDy-tF-pwh">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="119"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d0g-xx-WDB">
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="119"/>
+                                                    <subviews>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M7K-Wa-GuJ" customClass="RoundedCardItem" customModule="NubankSimulator" customModuleProvider="target">
+                                                            <rect key="frame" x="24" y="14.666666666666664" width="60" height="90"/>
+                                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="60" id="GCL-LF-lTW"/>
+                                                                <constraint firstAttribute="height" constant="90" id="N5j-r3-zcu"/>
+                                                            </constraints>
+                                                        </view>
+                                                    </subviews>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    <constraints>
+                                                        <constraint firstItem="M7K-Wa-GuJ" firstAttribute="leading" secondItem="d0g-xx-WDB" secondAttribute="leading" constant="24" id="57Q-5C-SZX"/>
+                                                        <constraint firstItem="M7K-Wa-GuJ" firstAttribute="centerY" secondItem="d0g-xx-WDB" secondAttribute="centerY" id="9NX-OF-Tvx"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="d0g-xx-WDB" secondAttribute="bottom" id="B9U-ja-T1P"/>
+                                                <constraint firstAttribute="trailing" secondItem="d0g-xx-WDB" secondAttribute="trailing" id="HzA-vf-fR5"/>
+                                                <constraint firstItem="d0g-xx-WDB" firstAttribute="top" secondItem="JDy-tF-pwh" secondAttribute="top" id="R3o-8g-rrL"/>
+                                                <constraint firstItem="d0g-xx-WDB" firstAttribute="leading" secondItem="JDy-tF-pwh" secondAttribute="leading" id="qjJ-KY-eFc"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="roundedItens" destination="M7K-Wa-GuJ" id="GWE-nO-H5F"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
                                 <connections>
-                                    <outlet property="dataSource" destination="vc0-52-tw4" id="537-BK-qW8"/>
-                                    <outlet property="delegate" destination="vc0-52-tw4" id="btS-EE-QuN"/>
+                                    <outlet property="dataSource" destination="vc0-52-tw4" id="yf0-tg-18B"/>
+                                    <outlet property="delegate" destination="vc0-52-tw4" id="XLt-sO-GB2"/>
                                 </connections>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="BrA-cm-tSg"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Jpf-fh-ea9" firstAttribute="top" secondItem="BrA-cm-tSg" secondAttribute="top" id="36l-Kg-zJq"/>
-                            <constraint firstItem="Jpf-fh-ea9" firstAttribute="leading" secondItem="BrA-cm-tSg" secondAttribute="leading" id="CLd-eW-63Z"/>
-                            <constraint firstItem="Jpf-fh-ea9" firstAttribute="trailing" secondItem="BrA-cm-tSg" secondAttribute="trailing" id="T1e-SO-b3p"/>
-                            <constraint firstItem="Jpf-fh-ea9" firstAttribute="bottom" secondItem="BrA-cm-tSg" secondAttribute="bottom" id="XfC-62-iPb"/>
+                            <constraint firstItem="BrA-cm-tSg" firstAttribute="trailing" secondItem="dWz-ym-hwC" secondAttribute="trailing" id="58m-Dd-77h"/>
+                            <constraint firstItem="dWz-ym-hwC" firstAttribute="leading" secondItem="BrA-cm-tSg" secondAttribute="leading" id="7hb-tu-flm"/>
+                            <constraint firstItem="BrA-cm-tSg" firstAttribute="bottom" secondItem="dWz-ym-hwC" secondAttribute="bottom" id="ZpD-UC-wcm"/>
+                            <constraint firstItem="dWz-ym-hwC" firstAttribute="top" secondItem="BrA-cm-tSg" secondAttribute="top" id="dHw-bU-joj"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Home" id="z5o-Aj-RVu"/>
                     <connections>
-                        <outlet property="mainTableView" destination="Jpf-fh-ea9" id="zW7-Wq-X3Y"/>
+                        <outlet property="tableView" destination="dWz-ym-hwC" id="e3h-Tm-K77"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gZM-Ct-Znu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -187,6 +301,9 @@
         <image name="nuBank" width="275" height="97.666664123535156"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray4Color">
+            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
