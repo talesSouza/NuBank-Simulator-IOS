@@ -20,7 +20,7 @@ class RoundedCardItem: UIView, NibOwnerLoadable {
 // MARK: - Sets
 extension RoundedCardItem {
     func set(text: String, image: UIImage) {
-        label.set(text: text, textStyle: TextStyle())
+        label.set(text: text, textStyle: TextStyle(size: .p16))
         centerImage.image = image
     }
 }

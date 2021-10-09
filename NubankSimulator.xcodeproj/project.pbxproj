@@ -34,12 +34,15 @@
 		1C53F645270E425200A8E54A /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C53F644270E425200A8E54A /* UIViewController+Extensions.swift */; };
 		1C78ADEC2710A52300DCF5C3 /* UserInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C78ADEB2710A52300DCF5C3 /* UserInfoTableViewCell.swift */; };
 		1C78ADEE2710A52900DCF5C3 /* AccountBalanceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C78ADED2710A52900DCF5C3 /* AccountBalanceTableViewCell.swift */; };
-		1C78ADF42710BFA400DCF5C3 /* ActionOptionsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C78ADF32710BFA400DCF5C3 /* ActionOptionsTableViewCell.swift */; };
+		1C8CDD8927112C2500E0CB9B /* CollectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8CDD8827112C2500E0CB9B /* CollectionTableViewCell.swift */; };
+		1C8CDD8B27112D2B00E0CB9B /* pixCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8CDD8A27112D2B00E0CB9B /* pixCollectionViewCell.swift */; };
+		1C8CDD8F2711E93E00E0CB9B /* payCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8CDD8E2711E93E00E0CB9B /* payCollectionViewCell.swift */; };
 		1C92EE6A270DD85E0067BE37 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1C92EE69270DD85E0067BE37 /* Localizable.strings */; };
 		1C92EE6E270DE2130067BE37 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C92EE6D270DE2130067BE37 /* String+Extensions.swift */; };
 		1C92EE71270DE3AA0067BE37 /* LabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C92EE70270DE3AA0067BE37 /* LabelView.swift */; };
 		1C92EE73270DE3CE0067BE37 /* LabelView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C92EE72270DE3CE0067BE37 /* LabelView.xib */; };
 		1C92EE78270DFFDA0067BE37 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C92EE77270DFFDA0067BE37 /* UIView+Extensions.swift */; };
+		1CAF4234271207C700CC64F4 /* TransferCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CAF4233271207C700CC64F4 /* TransferCollectionViewCell.swift */; };
 		1CED5505270D323F0089F9AB /* NibOwnerLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CED5504270D323F0089F9AB /* NibOwnerLoadable.swift */; };
 		1CEFE014270F5A4B0055D7ED /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CEFE013270F5A4B0055D7ED /* HomeViewController.swift */; };
 		1CEFE017270F89A30055D7ED /* RoundedCardItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CEFE016270F89A30055D7ED /* RoundedCardItem.swift */; };
@@ -100,12 +103,15 @@
 		1C53F644270E425200A8E54A /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		1C78ADEB2710A52300DCF5C3 /* UserInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoTableViewCell.swift; sourceTree = "<group>"; };
 		1C78ADED2710A52900DCF5C3 /* AccountBalanceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountBalanceTableViewCell.swift; sourceTree = "<group>"; };
-		1C78ADF32710BFA400DCF5C3 /* ActionOptionsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionOptionsTableViewCell.swift; sourceTree = "<group>"; };
+		1C8CDD8827112C2500E0CB9B /* CollectionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionTableViewCell.swift; sourceTree = "<group>"; };
+		1C8CDD8A27112D2B00E0CB9B /* pixCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pixCollectionViewCell.swift; sourceTree = "<group>"; };
+		1C8CDD8E2711E93E00E0CB9B /* payCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = payCollectionViewCell.swift; sourceTree = "<group>"; };
 		1C92EE69270DD85E0067BE37 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		1C92EE6D270DE2130067BE37 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		1C92EE70270DE3AA0067BE37 /* LabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelView.swift; sourceTree = "<group>"; };
 		1C92EE72270DE3CE0067BE37 /* LabelView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LabelView.xib; sourceTree = "<group>"; };
 		1C92EE77270DFFDA0067BE37 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		1CAF4233271207C700CC64F4 /* TransferCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferCollectionViewCell.swift; sourceTree = "<group>"; };
 		1CED5504270D323F0089F9AB /* NibOwnerLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibOwnerLoadable.swift; sourceTree = "<group>"; };
 		1CEFE013270F5A4B0055D7ED /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		1CEFE016270F89A30055D7ED /* RoundedCardItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCardItem.swift; sourceTree = "<group>"; };
@@ -357,38 +363,42 @@
 			path = Login;
 			sourceTree = "<group>";
 		};
-		1C78ADEF2710BAFA00DCF5C3 /* UserCell */ = {
+		1C78ADEF2710BAFA00DCF5C3 /* User */ = {
 			isa = PBXGroup;
 			children = (
 				1C78ADEB2710A52300DCF5C3 /* UserInfoTableViewCell.swift */,
 			);
-			path = UserCell;
+			path = User;
 			sourceTree = "<group>";
 		};
-		1C78ADF02710BB0600DCF5C3 /* AccountCell */ = {
+		1C78ADF02710BB0600DCF5C3 /* Account */ = {
 			isa = PBXGroup;
 			children = (
 				1C78ADED2710A52900DCF5C3 /* AccountBalanceTableViewCell.swift */,
 			);
-			path = AccountCell;
+			path = Account;
 			sourceTree = "<group>";
 		};
 		1C78ADF12710BB0D00DCF5C3 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				1C78ADF22710BF9000DCF5C3 /* ActionOptions */,
-				1C78ADEF2710BAFA00DCF5C3 /* UserCell */,
-				1C78ADF02710BB0600DCF5C3 /* AccountCell */,
+				1C78ADEF2710BAFA00DCF5C3 /* User */,
+				1C78ADF02710BB0600DCF5C3 /* Account */,
+				1C8CDD8527112B4800E0CB9B /* Collection */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
 		};
-		1C78ADF22710BF9000DCF5C3 /* ActionOptions */ = {
+		1C8CDD8527112B4800E0CB9B /* Collection */ = {
 			isa = PBXGroup;
 			children = (
-				1C78ADF32710BFA400DCF5C3 /* ActionOptionsTableViewCell.swift */,
+				1CAF42322712059F00CC64F4 /* New Group */,
+				1C8CDD8827112C2500E0CB9B /* CollectionTableViewCell.swift */,
+				1C8CDD8A27112D2B00E0CB9B /* pixCollectionViewCell.swift */,
+				1C8CDD8E2711E93E00E0CB9B /* payCollectionViewCell.swift */,
+				1CAF4233271207C700CC64F4 /* TransferCollectionViewCell.swift */,
 			);
-			path = ActionOptions;
+			path = Collection;
 			sourceTree = "<group>";
 		};
 		1C92EE6B270DE1EC0067BE37 /* Extensions */ = {
@@ -425,6 +435,13 @@
 				1C53F644270E425200A8E54A /* UIViewController+Extensions.swift */,
 			);
 			path = UI;
+			sourceTree = "<group>";
+		};
+		1CAF42322712059F00CC64F4 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 		1CED5502270D32260089F9AB /* Protocols */ = {
@@ -739,21 +756,24 @@
 			files = (
 				1C78ADEE2710A52900DCF5C3 /* AccountBalanceTableViewCell.swift in Sources */,
 				1C92EE78270DFFDA0067BE37 /* UIView+Extensions.swift in Sources */,
+				1CAF4234271207C700CC64F4 /* TransferCollectionViewCell.swift in Sources */,
 				1C53F63F270E388A00A8E54A /* LoginServiceProtocol.swift in Sources */,
 				1C0AE6FF270CFC4800D47E4B /* TextStyle.swift in Sources */,
 				1C0AE709270D06B400D47E4B /* CoreModuleDependencies.swift in Sources */,
 				1C53F643270E391B00A8E54A /* LoginViewState.swift in Sources */,
 				1C06EE1E270CC1CF006329AC /* LoginViewController.swift in Sources */,
 				1C11E079270F2F4C0007F557 /* ModuleDependencies.swift in Sources */,
+				1C8CDD8F2711E93E00E0CB9B /* payCollectionViewCell.swift in Sources */,
 				1C53F645270E425200A8E54A /* UIViewController+Extensions.swift in Sources */,
+				1C8CDD8927112C2500E0CB9B /* CollectionTableViewCell.swift in Sources */,
 				1C0AE70B270D076A00D47E4B /* ClosureTypes.swift in Sources */,
+				1C8CDD8B27112D2B00E0CB9B /* pixCollectionViewCell.swift in Sources */,
 				1C78ADEC2710A52300DCF5C3 /* UserInfoTableViewCell.swift in Sources */,
 				1C11E075270F2F0C0007F557 /* LoginModuleDependencies.swift in Sources */,
 				1C92EE6E270DE2130067BE37 /* String+Extensions.swift in Sources */,
 				1CEFE014270F5A4B0055D7ED /* HomeViewController.swift in Sources */,
 				1CED5505270D323F0089F9AB /* NibOwnerLoadable.swift in Sources */,
 				1C53F63D270E387800A8E54A /* LoginService.swift in Sources */,
-				1C78ADF42710BFA400DCF5C3 /* ActionOptionsTableViewCell.swift in Sources */,
 				1C06EE1A270CC1CF006329AC /* AppDelegate.swift in Sources */,
 				1C53F641270E391200A8E54A /* LoginViewModel.swift in Sources */,
 				1C06EE4E270CC382006329AC /* ButtonView.swift in Sources */,
