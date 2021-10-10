@@ -8,7 +8,7 @@ class AccountBalanceTableViewCell: UITableViewCell {
     
     
     func config() {
-        accountLabelView.set(text: "Conta", textStyle: TextStyle(size: .p20))
-        balanceLabelView.set(text: "R$ 42.169,24", textStyle: TextStyle(size: .p26))
+        accountLabelView.set(text: "Conta", textStyle: TextStyle(size: .p22))
+        balanceLabelView.set(text: "R$ 42.169,24", textStyle: TextStyle(size: .p30))
     }
 }

@@ -4,29 +4,27 @@ class CollectionTableViewCell: UITableViewCell, UICollectionViewDelegate, UIColl
     
     @IBOutlet weak var collectionItems: UICollectionView!
     
+    var menuOptions: [MenuOption] = [MenuOption(imageName: "pix", text: "Pix"),
+                                     MenuOption(imageName: "barCode", text: "Pagamento"),
+                                     MenuOption(imageName: "transfer", text: "Transferir"),
+                                     MenuOption(imageName: "deposit", text: "Depositar"),
+                                     MenuOption(imageName: "recharge", text: "Recarga de celular"),
+                                     MenuOption(imageName: "demand", text: "Cobrar"),
+                                     MenuOption(imageName: "donation", text: "Doação"),
+                                     MenuOption(imageName: "worldTransfer", text: "Transferir Internac.")]
+    
     func reloadCollectionView() -> Void {
         self.collectionItems.reloadData()
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 3
+        return menuOptions.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        if indexPath.row < 1 {
-            let cell = collectionItems.dequeueReusableCell(withReuseIdentifier: "pixCollectionItem", for: indexPath) as! pixCollectionViewCell
-            cell.configure()
-            return cell
-        } else if indexPath.row < 2 {
-            
-            let cell = collectionItems.dequeueReusableCell(withReuseIdentifier: "payCollectionItem", for: indexPath) as! payCollectionViewCell
-            cell.configure()
-            return cell
-        }
-        
-        let cell = collectionItems.dequeueReusableCell(withReuseIdentifier: "transferCollectionItem", for: indexPath) as! TransferCollectionViewCell
-        cell.configure()
+        let cell = collectionItems.dequeueReusableCell(withReuseIdentifier: "collectionCell", for: indexPath) as! MenuOptionsCollectionViewCell
+        cell.configure(menuOption: menuOptions[indexPath.row])
         return cell
     }
 }

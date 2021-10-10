@@ -182,42 +182,41 @@
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         </imageView>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow" translatesAutoresizingMaskIntoConstraints="NO" id="57u-Gv-3Ku">
-                                                            <rect key="frame" x="358" y="32" width="16" height="16"/>
+                                                            <rect key="frame" x="360" y="32" width="14" height="14"/>
                                                             <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <constraints>
-                                                                <constraint firstAttribute="width" constant="16" id="JCp-on-xYw"/>
-                                                                <constraint firstAttribute="height" constant="16" id="gLW-RR-EFF"/>
+                                                                <constraint firstAttribute="width" constant="14" id="JCp-on-xYw"/>
+                                                                <constraint firstAttribute="height" constant="14" id="gLW-RR-EFF"/>
                                                             </constraints>
                                                         </imageView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="eAh-yG-Wyn">
+                                                            <rect key="frame" x="24" y="24" width="110" height="90"/>
+                                                            <subviews>
+                                                                <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="o8K-wj-6zT" customClass="LabelView" customModule="NubankSimulator" customModuleProvider="target">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="60" height="30"/>
+                                                                    <color key="backgroundColor" systemColor="systemGray3Color"/>
+                                                                </view>
+                                                                <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ua5-AG-xrB" customClass="LabelView" customModule="NubankSimulator" customModuleProvider="target">
+                                                                    <rect key="frame" x="0.0" y="40" width="110" height="50"/>
+                                                                    <color key="backgroundColor" systemColor="systemGray3Color"/>
+                                                                </view>
+                                                            </subviews>
+                                                        </stackView>
                                                     </subviews>
                                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     <constraints>
+                                                        <constraint firstAttribute="bottom" secondItem="eAh-yG-Wyn" secondAttribute="bottom" constant="24" id="2CR-pW-zq9"/>
+                                                        <constraint firstItem="eAh-yG-Wyn" firstAttribute="top" secondItem="Swe-N2-BSf" secondAttribute="top" constant="24" id="5TU-Yc-lN2"/>
                                                         <constraint firstItem="57u-Gv-3Ku" firstAttribute="top" secondItem="Swe-N2-BSf" secondAttribute="top" constant="32" id="5Zv-iY-UHK"/>
+                                                        <constraint firstItem="eAh-yG-Wyn" firstAttribute="leading" secondItem="Swe-N2-BSf" secondAttribute="leading" constant="24" id="nPd-dV-u1a"/>
                                                         <constraint firstAttribute="trailing" secondItem="57u-Gv-3Ku" secondAttribute="trailing" constant="40" id="un6-X4-uL4"/>
                                                     </constraints>
                                                 </view>
-                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="TQN-aV-hpX">
-                                                    <rect key="frame" x="24" y="32" width="220" height="74"/>
-                                                    <subviews>
-                                                        <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="o8K-wj-6zT" customClass="LabelView" customModule="NubankSimulator" customModuleProvider="target">
-                                                            <rect key="frame" x="0.0" y="0.0" width="220" height="0.0"/>
-                                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                                        </view>
-                                                        <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ua5-AG-xrB" customClass="LabelView" customModule="NubankSimulator" customModuleProvider="target">
-                                                            <rect key="frame" x="0.0" y="30" width="220" height="44"/>
-                                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                                        </view>
-                                                    </subviews>
-                                                </stackView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="TQN-aV-hpX" firstAttribute="leading" secondItem="if4-c9-Ob3" secondAttribute="leading" constant="24" id="51N-XC-77v"/>
                                                 <constraint firstItem="Swe-N2-BSf" firstAttribute="leading" secondItem="if4-c9-Ob3" secondAttribute="leading" id="ITX-0t-UEY"/>
                                                 <constraint firstAttribute="trailing" secondItem="Swe-N2-BSf" secondAttribute="trailing" id="fTe-0m-QnS"/>
-                                                <constraint firstAttribute="bottom" secondItem="TQN-aV-hpX" secondAttribute="bottom" constant="32" id="gRn-6g-TFS"/>
-                                                <constraint firstItem="TQN-aV-hpX" firstAttribute="top" secondItem="if4-c9-Ob3" secondAttribute="top" constant="32" id="i4Z-kq-Eal"/>
                                                 <constraint firstItem="Swe-N2-BSf" firstAttribute="top" secondItem="if4-c9-Ob3" secondAttribute="top" id="rHv-z3-kbI"/>
-                                                <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="TQN-aV-hpX" secondAttribute="trailing" constant="150" id="uhy-2t-9WX"/>
                                                 <constraint firstAttribute="bottom" secondItem="Swe-N2-BSf" secondAttribute="bottom" id="y8M-fJ-NoP"/>
                                             </constraints>
                                         </tableViewCellContentView>
@@ -243,81 +242,51 @@
                                                         <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                     </collectionViewFlowLayout>
                                                     <cells>
-                                                        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="transferCollectionItem" id="SZi-Iw-2US" customClass="TransferCollectionViewCell" customModule="NubankSimulator" customModuleProvider="target">
+                                                        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="collectionCell" id="ooA-vf-OOe" customClass="MenuOptionsCollectionViewCell" customModule="NubankSimulator" customModuleProvider="target">
                                                             <rect key="frame" x="0.0" y="34.666666666666664" width="80" height="120"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="nth-2K-3rM">
+                                                            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="SET-xf-MFY">
                                                                 <rect key="frame" x="0.0" y="0.0" width="80" height="120"/>
                                                                 <autoresizingMask key="autoresizingMask"/>
                                                                 <subviews>
-                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7o8-mu-lKc" customClass="RoundedCardItem" customModule="NubankSimulator" customModuleProvider="target">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="80" height="120"/>
-                                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YK9-eQ-RV8">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                                                        <subviews>
+                                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PbR-1O-Eoj">
+                                                                                <rect key="frame" x="27.666666666666671" y="27.666666666666671" width="25" height="25"/>
+                                                                                <constraints>
+                                                                                    <constraint firstAttribute="width" constant="25" id="15K-vU-8jG"/>
+                                                                                    <constraint firstAttribute="height" constant="25" id="eCK-YJ-eDw"/>
+                                                                                </constraints>
+                                                                            </imageView>
+                                                                        </subviews>
+                                                                        <color key="backgroundColor" systemColor="systemGray6Color"/>
                                                                         <constraints>
-                                                                            <constraint firstAttribute="width" constant="80" id="4wV-MQ-5DY"/>
-                                                                            <constraint firstAttribute="height" constant="120" id="ocP-GI-7Nt"/>
+                                                                            <constraint firstAttribute="height" constant="80" id="GnN-dw-3rl"/>
+                                                                            <constraint firstAttribute="width" constant="80" id="Q3U-cO-Esc"/>
+                                                                            <constraint firstItem="PbR-1O-Eoj" firstAttribute="centerY" secondItem="YK9-eQ-RV8" secondAttribute="centerY" id="iF0-tn-z7n"/>
+                                                                            <constraint firstItem="PbR-1O-Eoj" firstAttribute="centerX" secondItem="YK9-eQ-RV8" secondAttribute="centerX" id="n8o-bP-AEJ"/>
                                                                         </constraints>
+                                                                    </view>
+                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WbX-e6-n1u" customClass="LabelView" customModule="NubankSimulator" customModuleProvider="target">
+                                                                        <rect key="frame" x="0.0" y="80" width="80" height="40"/>
+                                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                                     </view>
                                                                 </subviews>
                                                                 <constraints>
-                                                                    <constraint firstItem="7o8-mu-lKc" firstAttribute="centerY" secondItem="nth-2K-3rM" secondAttribute="centerY" id="T7S-jt-KO5"/>
-                                                                    <constraint firstItem="7o8-mu-lKc" firstAttribute="centerX" secondItem="nth-2K-3rM" secondAttribute="centerX" id="tg5-fm-HKT"/>
+                                                                    <constraint firstItem="YK9-eQ-RV8" firstAttribute="leading" secondItem="SET-xf-MFY" secondAttribute="leading" id="0cE-gg-UiM"/>
+                                                                    <constraint firstItem="YK9-eQ-RV8" firstAttribute="top" secondItem="SET-xf-MFY" secondAttribute="top" id="Dvr-zo-9cd"/>
+                                                                    <constraint firstItem="WbX-e6-n1u" firstAttribute="leading" secondItem="SET-xf-MFY" secondAttribute="leading" id="Ego-on-xbt"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="YK9-eQ-RV8" secondAttribute="trailing" id="IMW-Fj-gSB"/>
+                                                                    <constraint firstItem="WbX-e6-n1u" firstAttribute="top" secondItem="YK9-eQ-RV8" secondAttribute="bottom" id="KFf-RN-OA1"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="WbX-e6-n1u" secondAttribute="trailing" id="dQ3-9m-Whq"/>
+                                                                    <constraint firstAttribute="bottom" secondItem="WbX-e6-n1u" secondAttribute="bottom" id="oQu-mK-SCw"/>
                                                                 </constraints>
                                                             </collectionViewCellContentView>
                                                             <connections>
-                                                                <outlet property="roundedItem" destination="7o8-mu-lKc" id="xhD-Vt-GuV"/>
-                                                            </connections>
-                                                        </collectionViewCell>
-                                                        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="payCollectionItem" id="hOY-5z-Hv2" customClass="payCollectionViewCell" customModule="NubankSimulator" customModuleProvider="target">
-                                                            <rect key="frame" x="90" y="34.666666666666664" width="80" height="120"/>
-                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="47J-T7-kBY">
-                                                                <rect key="frame" x="0.0" y="0.0" width="80" height="120"/>
-                                                                <autoresizingMask key="autoresizingMask"/>
-                                                                <subviews>
-                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q4x-W1-8B9" customClass="RoundedCardItem" customModule="NubankSimulator" customModuleProvider="target">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="80" height="120"/>
-                                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                                                        <constraints>
-                                                                            <constraint firstAttribute="height" constant="120" id="lIj-Pk-DMQ"/>
-                                                                            <constraint firstAttribute="width" constant="80" id="rxL-ny-UST"/>
-                                                                        </constraints>
-                                                                    </view>
-                                                                </subviews>
-                                                                <constraints>
-                                                                    <constraint firstItem="q4x-W1-8B9" firstAttribute="centerX" secondItem="47J-T7-kBY" secondAttribute="centerX" id="UkY-wp-YLy"/>
-                                                                    <constraint firstItem="q4x-W1-8B9" firstAttribute="centerY" secondItem="47J-T7-kBY" secondAttribute="centerY" id="YAW-Nh-e5b"/>
-                                                                </constraints>
-                                                            </collectionViewCellContentView>
-                                                            <size key="customSize" width="80" height="120"/>
-                                                            <connections>
-                                                                <outlet property="roundedItem" destination="q4x-W1-8B9" id="fq5-7n-QOa"/>
-                                                            </connections>
-                                                        </collectionViewCell>
-                                                        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="pixCollectionItem" id="LM0-ld-hVN" customClass="pixCollectionViewCell" customModule="NubankSimulator" customModuleProvider="target">
-                                                            <rect key="frame" x="180" y="34.666666666666664" width="80" height="120"/>
-                                                            <autoresizingMask key="autoresizingMask"/>
-                                                            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="8QS-GF-sti">
-                                                                <rect key="frame" x="0.0" y="0.0" width="80" height="120"/>
-                                                                <autoresizingMask key="autoresizingMask"/>
-                                                                <subviews>
-                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ES9-Uq-pdT" customClass="RoundedCardItem" customModule="NubankSimulator" customModuleProvider="target">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="80" height="120"/>
-                                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                                                        <constraints>
-                                                                            <constraint firstAttribute="height" constant="120" id="7N2-BF-KKC"/>
-                                                                            <constraint firstAttribute="width" constant="80" id="dRk-uN-naK"/>
-                                                                        </constraints>
-                                                                    </view>
-                                                                </subviews>
-                                                                <constraints>
-                                                                    <constraint firstItem="ES9-Uq-pdT" firstAttribute="centerX" secondItem="8QS-GF-sti" secondAttribute="centerX" id="78x-wH-tON"/>
-                                                                    <constraint firstItem="ES9-Uq-pdT" firstAttribute="centerY" secondItem="8QS-GF-sti" secondAttribute="centerY" id="FUu-kC-hpu"/>
-                                                                </constraints>
-                                                            </collectionViewCellContentView>
-                                                            <size key="customSize" width="80" height="120"/>
-                                                            <connections>
-                                                                <outlet property="roundedItem" destination="ES9-Uq-pdT" id="n20-Ch-e9m"/>
+                                                                <outlet property="centerImage" destination="PbR-1O-Eoj" id="Qhd-2Q-abB"/>
+                                                                <outlet property="roundedBackgroundView" destination="YK9-eQ-RV8" id="3fX-QX-ccw"/>
+                                                                <outlet property="titleLabelView" destination="WbX-e6-n1u" id="6ZB-TL-vce"/>
                                                             </connections>
                                                         </collectionViewCell>
                                                     </cells>
@@ -397,8 +366,14 @@
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
+        <systemColor name="systemGray3Color">
+            <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemGray4Color">
             <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
