@@ -1,9 +1,11 @@
 import UIKit
 
-class CollectionTableViewCell: UITableViewCell, UICollectionViewDelegate, UICollectionViewDataSource {
+class CollectionTableViewCell: UITableViewCell {
     
+    // MARK: - IBOutlets
     @IBOutlet weak var collectionItems: UICollectionView!
     
+    // MARK: - Stored Properties
     var menuOptions: [MenuOption] = [MenuOption(imageName: "pix", text: "collection.pix".localized),
                                      MenuOption(imageName: "barCode", text: "collection.payment".localized),
                                      MenuOption(imageName: "transfer", text: "collection.transfer".localized),
@@ -12,6 +14,10 @@ class CollectionTableViewCell: UITableViewCell, UICollectionViewDelegate, UIColl
                                      MenuOption(imageName: "demand", text: "collection.demand".localized),
                                      MenuOption(imageName: "donation", text: "collection.donation".localized),
                                      MenuOption(imageName: "worldTransfer", text: "collection.worldTransfer".localized)]
+}
+
+// MARK: - UICollectionViewDelegate & UICollectionViewDataSource
+extension CollectionTableViewCell: UICollectionViewDelegate, UICollectionViewDataSource {
     
     func reloadCollectionView() -> Void {
         self.collectionItems.reloadData()
@@ -24,8 +30,7 @@ class CollectionTableViewCell: UITableViewCell, UICollectionViewDelegate, UIColl
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         let cell = collectionItems.dequeueReusableCell(withReuseIdentifier: "collectionCell", for: indexPath) as! MenuOptionsCollectionViewCell
-        cell.configure(menuOption: menuOptions[indexPath.row])
+        cell.setup(menuOption: menuOptions[indexPath.row])
         return cell
     }
 }
-

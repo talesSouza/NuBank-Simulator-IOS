@@ -23,14 +23,14 @@ extension DefaultCard {
     func set(imageName: String, topText: String, bottomText: String) {
         topImage.image = UIImage(named: imageName)
         topMainLabelView.set(text: topText, textStyle: TextStyle(size: .p24))
-        bottomMainLabelView.set(text: bottomText, textStyle: TextStyle(color: .gray, aligment: .left))
+        bottomMainLabelView.set(text: bottomText, textStyle: TextStyle(color: .gray, size: .p18 ,aligment: .left))
     }
     
     func showSecondaryLabelViews(topText: String, bottomText: String) {
         topSecondaryLabelView.isHidden = false
         bottomSecondaryLabelView.isHidden = false
         
-        topSecondaryLabelView.set(text: topText, textStyle: TextStyle(color: .gray))
-        bottomSecondaryLabelView.set(text: bottomText, textStyle: TextStyle(size: .p26, aligment: .left))
+        topSecondaryLabelView.set(text: topText, textStyle: TextStyle(color: .gray, size: .p20))
+        bottomSecondaryLabelView.set(text: bottomText, textStyle: TextStyle(size: .p28, aligment: .left))
     }
 }

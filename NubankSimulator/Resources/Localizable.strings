@@ -14,3 +14,18 @@
 "collection.demand" = "Cobrar";
 "collection.donation" = "Doação";
 "collection.worldTransfer" = "Transferir Internac.";
+
+// MARK: - Account Balance
+"balance.account" = "Conta";
+
+// MARK: - Credit Card
+"creditCard.creditCard" = "Cartão de crédito";
+"creditCard.actualBill" = "Fatura atual";
+
+// MARK: - Loan
+"loan.loan" = "Empréstimo";
+"loan.loanText" = "Crie um aviso para saber quando um \nempréstimo ficar disponível";
+
+// MARK: - Life Insurance
+"lifeInsurance.lifeInsurance" = "Seguro de vida";
+"lifeInsurance.insuranceText" = "Conheça Nubank Vida: um seguro simples e que \ncabe no bolso";

@@ -2,13 +2,19 @@ import UIKit
 
 class CreditCardTableViewCell: UITableViewCell {
 
+    // MARK: IBOutlets
     @IBOutlet weak var creditCardDefaultCard: DefaultCard!
     
-    func setup() {
-        creditCardDefaultCard.set(imageName: "creditCard", topText: "Cartão de crédito", bottomText: "Limite disponível de R$ 8.902,08")
-        
-        creditCardDefaultCard.showSecondaryLabelViews(topText: "Fatura atual", bottomText: "R$ 193,02")
-    }
-    
+    // MARK: Stored Properties
+    let user: User = User()
 }
 
+// MARK: Setup
+extension CreditCardTableViewCell {
+    
+    func setup() {
+        creditCardDefaultCard.set(imageName: "creditCard", topText: "creditCard.creditCard".localized, bottomText: "Limite disponível de R$ \(user.limit)")
+        
+        creditCardDefaultCard.showSecondaryLabelViews(topText: "creditCard.actualBill".localized, bottomText: "R$ \(user.creditCard)")
+    }
+}

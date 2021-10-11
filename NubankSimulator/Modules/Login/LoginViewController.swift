@@ -75,7 +75,7 @@ extension LoginViewController {
     }
     
     private func setupLabels() {
-        loginLabelView.set(text: "login.doLogin".localized, textStyle: TextStyle(color: .black, size: .p18, weight: .semiBold))
+        loginLabelView.set(text: "login.doLogin".localized, textStyle: TextStyle(color: .white, size: .p18, weight: .semiBold))
     }
 }
 

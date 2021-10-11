@@ -35,6 +35,7 @@
 		1C78ADEC2710A52300DCF5C3 /* UserInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C78ADEB2710A52300DCF5C3 /* UserInfoTableViewCell.swift */; };
 		1C78ADEE2710A52900DCF5C3 /* AccountBalanceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C78ADED2710A52900DCF5C3 /* AccountBalanceTableViewCell.swift */; };
 		1C7DFF842714B2E80029F0FF /* LifeInsuranceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7DFF832714B2E80029F0FF /* LifeInsuranceTableViewCell.swift */; };
+		1C7DFF862714BF430029F0FF /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7DFF852714BF430029F0FF /* User.swift */; };
 		1C8567192713A50D00C214AE /* MenuOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8567182713A50D00C214AE /* MenuOption.swift */; };
 		1C85671D2713CAB600C214AE /* CreditCardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C85671C2713CAB600C214AE /* CreditCardTableViewCell.swift */; };
 		1C8567202713CB0B00C214AE /* DefaultCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C85671F2713CB0B00C214AE /* DefaultCard.swift */; };
@@ -106,6 +107,7 @@
 		1C78ADEB2710A52300DCF5C3 /* UserInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoTableViewCell.swift; sourceTree = "<group>"; };
 		1C78ADED2710A52900DCF5C3 /* AccountBalanceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountBalanceTableViewCell.swift; sourceTree = "<group>"; };
 		1C7DFF832714B2E80029F0FF /* LifeInsuranceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeInsuranceTableViewCell.swift; sourceTree = "<group>"; };
+		1C7DFF852714BF430029F0FF /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		1C8567182713A50D00C214AE /* MenuOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuOption.swift; sourceTree = "<group>"; };
 		1C85671C2713CAB600C214AE /* CreditCardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardTableViewCell.swift; sourceTree = "<group>"; };
 		1C85671F2713CB0B00C214AE /* DefaultCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultCard.swift; sourceTree = "<group>"; };
@@ -231,8 +233,8 @@
 		1C06EE4A270CC24F006329AC /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				1CEFE012270F4C8E0055D7ED /* Home */,
 				1CEFE011270F4C880055D7ED /* Login */,
+				1CEFE012270F4C8E0055D7ED /* Home */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -354,6 +356,7 @@
 		1C53F63A270E385800A8E54A /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				1C7DFF872714BF770029F0FF /* User */,
 				1C53F63B270E386F00A8E54A /* Login */,
 			);
 			path = Service;
@@ -405,6 +408,14 @@
 			path = LifeInsurance;
 			sourceTree = "<group>";
 		};
+		1C7DFF872714BF770029F0FF /* User */ = {
+			isa = PBXGroup;
+			children = (
+				1C7DFF852714BF430029F0FF /* User.swift */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
 		1C85671A2713B24500C214AE /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -441,7 +452,6 @@
 		1C8CDD8527112B4800E0CB9B /* Collection */ = {
 			isa = PBXGroup;
 			children = (
-				1CAF42322712059F00CC64F4 /* New Group */,
 				1C8CDD8827112C2500E0CB9B /* CollectionTableViewCell.swift */,
 				1C8CDD8A27112D2B00E0CB9B /* MenuOptionsCollectionViewCell.swift */,
 			);
@@ -482,13 +492,6 @@
 				1C53F644270E425200A8E54A /* UIViewController+Extensions.swift */,
 			);
 			path = UI;
-			sourceTree = "<group>";
-		};
-		1CAF42322712059F00CC64F4 /* New Group */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "New Group";
 			sourceTree = "<group>";
 		};
 		1CED5502270D32260089F9AB /* Protocols */ = {
@@ -816,6 +819,7 @@
 				1C06EE1A270CC1CF006329AC /* AppDelegate.swift in Sources */,
 				1C53F641270E391200A8E54A /* LoginViewModel.swift in Sources */,
 				1C06EE4E270CC382006329AC /* ButtonView.swift in Sources */,
+				1C7DFF862714BF430029F0FF /* User.swift in Sources */,
 				1C0AE6FD270CFA9200D47E4B /* TextBuilder.swift in Sources */,
 				1C92EE71270DE3AA0067BE37 /* LabelView.swift in Sources */,
 				1C0AE707270D063700D47E4B /* BaseViewController.swift in Sources */,

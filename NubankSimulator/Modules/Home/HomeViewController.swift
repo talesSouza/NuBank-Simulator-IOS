@@ -1,7 +1,7 @@
 import UIKit
 
 class HomeViewController: BaseViewController {
-    
+
     // MARK: - IBOutlets
     @IBOutlet weak var tableView: UITableView!
 }
@@ -31,27 +31,26 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if indexPath.row < 1 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "userInfo") as! UserInfoTableViewCell
-            cell.config()
+            cell.setup()
             hideSeparators(cell: cell)
             return cell
         } else if indexPath.row < 2 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "accountBalance") as! AccountBalanceTableViewCell
-            cell.config()
+            cell.setup()
             hideSeparators(cell: cell)
             return cell
         } else if indexPath.row < 3 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "collection", for: indexPath) as! CollectionTableViewCell
             cell.reloadCollectionView()
-            hideSeparators(cell: cell)
             return cell
         } else if indexPath.row < 4 {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "creditCard", for: indexPath) as! CreditCardTableViewCell
-        cell.setup()
-        return cell
+            let cell = tableView.dequeueReusableCell(withIdentifier: "creditCard", for: indexPath) as! CreditCardTableViewCell
+            cell.setup()
+            return cell
         } else if indexPath.row < 5 {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "loan", for: indexPath) as! LoanTableViewCell
-        cell.setup()
-        return cell
+            let cell = tableView.dequeueReusableCell(withIdentifier: "loan", for: indexPath) as! LoanTableViewCell
+            cell.setup()
+            return cell
         }
         let cell = tableView.dequeueReusableCell(withIdentifier: "lifeInsurance", for: indexPath) as! LifeInsuranceTableViewCell
         cell.setup()

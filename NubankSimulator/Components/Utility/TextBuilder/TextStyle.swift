@@ -9,6 +9,7 @@ enum TextBuilderFontSize: CGFloat {
     case p22 = 22
     case p24 = 24
     case p26 = 26
+    case p28 = 28
     case p30 = 30
     case p34 = 34
 }
