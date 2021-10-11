@@ -4,14 +4,14 @@ class CollectionTableViewCell: UITableViewCell, UICollectionViewDelegate, UIColl
     
     @IBOutlet weak var collectionItems: UICollectionView!
     
-    var menuOptions: [MenuOption] = [MenuOption(imageName: "pix", text: "Pix"),
-                                     MenuOption(imageName: "barCode", text: "Pagamento"),
-                                     MenuOption(imageName: "transfer", text: "Transferir"),
-                                     MenuOption(imageName: "deposit", text: "Depositar"),
-                                     MenuOption(imageName: "recharge", text: "Recarga de celular"),
-                                     MenuOption(imageName: "demand", text: "Cobrar"),
-                                     MenuOption(imageName: "donation", text: "Doação"),
-                                     MenuOption(imageName: "worldTransfer", text: "Transferir Internac.")]
+    var menuOptions: [MenuOption] = [MenuOption(imageName: "pix", text: "collection.pix".localized),
+                                     MenuOption(imageName: "barCode", text: "collection.payment".localized),
+                                     MenuOption(imageName: "transfer", text: "collection.transfer".localized),
+                                     MenuOption(imageName: "deposit", text: "collection.deposit".localized),
+                                     MenuOption(imageName: "recharge", text: "collection.recharge".localized),
+                                     MenuOption(imageName: "demand", text: "collection.demand".localized),
+                                     MenuOption(imageName: "donation", text: "collection.donation".localized),
+                                     MenuOption(imageName: "worldTransfer", text: "collection.worldTransfer".localized)]
     
     func reloadCollectionView() -> Void {
         self.collectionItems.reloadData()

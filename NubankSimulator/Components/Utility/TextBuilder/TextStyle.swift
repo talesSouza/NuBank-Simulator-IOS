@@ -23,6 +23,7 @@ enum TextBuilderFontWeight: String {
 struct TextStyle {
     
     var color: UIColor = .black
-    var size: TextBuilderFontSize = .p14
+    var size: TextBuilderFontSize = .p16
     var weight: TextBuilderFontWeight = .semiBold
+    var aligment: NSTextAlignment = .center
 }

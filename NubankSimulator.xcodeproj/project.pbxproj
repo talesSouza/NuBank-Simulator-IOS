@@ -34,7 +34,12 @@
 		1C53F645270E425200A8E54A /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C53F644270E425200A8E54A /* UIViewController+Extensions.swift */; };
 		1C78ADEC2710A52300DCF5C3 /* UserInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C78ADEB2710A52300DCF5C3 /* UserInfoTableViewCell.swift */; };
 		1C78ADEE2710A52900DCF5C3 /* AccountBalanceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C78ADED2710A52900DCF5C3 /* AccountBalanceTableViewCell.swift */; };
+		1C7DFF842714B2E80029F0FF /* LifeInsuranceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7DFF832714B2E80029F0FF /* LifeInsuranceTableViewCell.swift */; };
 		1C8567192713A50D00C214AE /* MenuOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8567182713A50D00C214AE /* MenuOption.swift */; };
+		1C85671D2713CAB600C214AE /* CreditCardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C85671C2713CAB600C214AE /* CreditCardTableViewCell.swift */; };
+		1C8567202713CB0B00C214AE /* DefaultCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C85671F2713CB0B00C214AE /* DefaultCard.swift */; };
+		1C8567222713CB1300C214AE /* DefaultCard.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C8567212713CB1300C214AE /* DefaultCard.xib */; };
+		1C8567252713D2C400C214AE /* LoanTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8567242713D2C400C214AE /* LoanTableViewCell.swift */; };
 		1C8CDD8927112C2500E0CB9B /* CollectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8CDD8827112C2500E0CB9B /* CollectionTableViewCell.swift */; };
 		1C8CDD8B27112D2B00E0CB9B /* MenuOptionsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8CDD8A27112D2B00E0CB9B /* MenuOptionsCollectionViewCell.swift */; };
 		1C92EE6A270DD85E0067BE37 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1C92EE69270DD85E0067BE37 /* Localizable.strings */; };
@@ -100,7 +105,12 @@
 		1C53F644270E425200A8E54A /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		1C78ADEB2710A52300DCF5C3 /* UserInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoTableViewCell.swift; sourceTree = "<group>"; };
 		1C78ADED2710A52900DCF5C3 /* AccountBalanceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountBalanceTableViewCell.swift; sourceTree = "<group>"; };
+		1C7DFF832714B2E80029F0FF /* LifeInsuranceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeInsuranceTableViewCell.swift; sourceTree = "<group>"; };
 		1C8567182713A50D00C214AE /* MenuOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuOption.swift; sourceTree = "<group>"; };
+		1C85671C2713CAB600C214AE /* CreditCardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardTableViewCell.swift; sourceTree = "<group>"; };
+		1C85671F2713CB0B00C214AE /* DefaultCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultCard.swift; sourceTree = "<group>"; };
+		1C8567212713CB1300C214AE /* DefaultCard.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DefaultCard.xib; sourceTree = "<group>"; };
+		1C8567242713D2C400C214AE /* LoanTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanTableViewCell.swift; sourceTree = "<group>"; };
 		1C8CDD8827112C2500E0CB9B /* CollectionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionTableViewCell.swift; sourceTree = "<group>"; };
 		1C8CDD8A27112D2B00E0CB9B /* MenuOptionsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuOptionsCollectionViewCell.swift; sourceTree = "<group>"; };
 		1C92EE69270DD85E0067BE37 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
@@ -180,6 +190,7 @@
 				1C92EE6B270DE1EC0067BE37 /* Extensions */,
 				1C06EE24270CC1D0006329AC /* LaunchScreen.storyboard */,
 				1C06EE1F270CC1CF006329AC /* Main.storyboard */,
+				1C85671A2713B24500C214AE /* Models */,
 				1C06EE4A270CC24F006329AC /* Modules */,
 				1CED5502270D32260089F9AB /* Protocols */,
 				1C06EE4B270CC25F006329AC /* Resources */,
@@ -239,6 +250,7 @@
 			isa = PBXGroup;
 			children = (
 				1C06EE52270CC4AA006329AC /* Text */,
+				1C85671E2713CACE00C214AE /* UI */,
 				1C0AE6FA270CFA7800D47E4B /* Utility */,
 			);
 			path = Components;
@@ -378,8 +390,52 @@
 				1C78ADEF2710BAFA00DCF5C3 /* User */,
 				1C78ADF02710BB0600DCF5C3 /* Account */,
 				1C8CDD8527112B4800E0CB9B /* Collection */,
+				1C85671B2713CA8900C214AE /* CreditCard */,
+				1C8567232713D2BA00C214AE /* Loan */,
+				1C7DFF822714B2C70029F0FF /* LifeInsurance */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		1C7DFF822714B2C70029F0FF /* LifeInsurance */ = {
+			isa = PBXGroup;
+			children = (
+				1C7DFF832714B2E80029F0FF /* LifeInsuranceTableViewCell.swift */,
+			);
+			path = LifeInsurance;
+			sourceTree = "<group>";
+		};
+		1C85671A2713B24500C214AE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1C8567182713A50D00C214AE /* MenuOption.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1C85671B2713CA8900C214AE /* CreditCard */ = {
+			isa = PBXGroup;
+			children = (
+				1C85671C2713CAB600C214AE /* CreditCardTableViewCell.swift */,
+			);
+			path = CreditCard;
+			sourceTree = "<group>";
+		};
+		1C85671E2713CACE00C214AE /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				1C85671F2713CB0B00C214AE /* DefaultCard.swift */,
+				1C8567212713CB1300C214AE /* DefaultCard.xib */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		1C8567232713D2BA00C214AE /* Loan */ = {
+			isa = PBXGroup;
+			children = (
+				1C8567242713D2C400C214AE /* LoanTableViewCell.swift */,
+			);
+			path = Loan;
 			sourceTree = "<group>";
 		};
 		1C8CDD8527112B4800E0CB9B /* Collection */ = {
@@ -387,7 +443,6 @@
 			children = (
 				1CAF42322712059F00CC64F4 /* New Group */,
 				1C8CDD8827112C2500E0CB9B /* CollectionTableViewCell.swift */,
-				1C8567182713A50D00C214AE /* MenuOption.swift */,
 				1C8CDD8A27112D2B00E0CB9B /* MenuOptionsCollectionViewCell.swift */,
 			);
 			path = Collection;
@@ -607,6 +662,7 @@
 				1C06EE23270CC1D0006329AC /* Assets.xcassets in Resources */,
 				1C92EE6A270DD85E0067BE37 /* Localizable.strings in Resources */,
 				1C06EE50270CC3A6006329AC /* ButtonView.xib in Resources */,
+				1C8567222713CB1300C214AE /* DefaultCard.xib in Resources */,
 				1C06EE21270CC1CF006329AC /* Main.storyboard in Resources */,
 				1C92EE73270DE3CE0067BE37 /* LabelView.xib in Resources */,
 			);
@@ -737,6 +793,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1C78ADEE2710A52900DCF5C3 /* AccountBalanceTableViewCell.swift in Sources */,
+				1C7DFF842714B2E80029F0FF /* LifeInsuranceTableViewCell.swift in Sources */,
 				1C92EE78270DFFDA0067BE37 /* UIView+Extensions.swift in Sources */,
 				1C8567192713A50D00C214AE /* MenuOption.swift in Sources */,
 				1C53F63F270E388A00A8E54A /* LoginServiceProtocol.swift in Sources */,
@@ -754,6 +811,7 @@
 				1C92EE6E270DE2130067BE37 /* String+Extensions.swift in Sources */,
 				1CEFE014270F5A4B0055D7ED /* HomeViewController.swift in Sources */,
 				1CED5505270D323F0089F9AB /* NibOwnerLoadable.swift in Sources */,
+				1C85671D2713CAB600C214AE /* CreditCardTableViewCell.swift in Sources */,
 				1C53F63D270E387800A8E54A /* LoginService.swift in Sources */,
 				1C06EE1A270CC1CF006329AC /* AppDelegate.swift in Sources */,
 				1C53F641270E391200A8E54A /* LoginViewModel.swift in Sources */,
@@ -764,7 +822,9 @@
 				1C11E07B270F358D0007F557 /* AppDependencies.swift in Sources */,
 				1C11E072270F2DF10007F557 /* KeyValueStorageKeys+Extensions.swift in Sources */,
 				1C0AE701270D042700D47E4B /* ButtonViewStyle.swift in Sources */,
+				1C8567202713CB0B00C214AE /* DefaultCard.swift in Sources */,
 				1C06EE1C270CC1CF006329AC /* SceneDelegate.swift in Sources */,
+				1C8567252713D2C400C214AE /* LoanTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -134,15 +134,15 @@
                                 <rect key="frame" x="0.0" y="96" width="414" height="640"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="userInfo" rowHeight="140" id="G6I-a2-PXL" customClass="UserInfoTableViewCell" customModule="NubankSimulator" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="44.666666030883789" width="414" height="140"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="userInfo" rowHeight="63" id="G6I-a2-PXL" customClass="UserInfoTableViewCell" customModule="NubankSimulator" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.666666030883789" width="414" height="63"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="G6I-a2-PXL" id="PVA-NM-qMx">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="140"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="63"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Hk-Tz-GG1">
-                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="140"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="63"/>
                                                     <subviews>
                                                         <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zvA-ND-dPA" customClass="LabelView" customModule="NubankSimulator" customModuleProvider="target">
                                                             <rect key="frame" x="25" y="84" width="168" height="38"/>
@@ -167,15 +167,15 @@
                                             <outlet property="label" destination="zvA-ND-dPA" id="x3I-48-3zu"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="accountBalance" rowHeight="138" id="sc1-sJ-q1K" customClass="AccountBalanceTableViewCell" customModule="NubankSimulator" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="184.66666603088379" width="414" height="138"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="accountBalance" rowHeight="66" id="sc1-sJ-q1K" customClass="AccountBalanceTableViewCell" customModule="NubankSimulator" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="107.66666603088379" width="414" height="66"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="sc1-sJ-q1K" id="if4-c9-Ob3">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="138"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="66"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Swe-N2-BSf">
-                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="138"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="66"/>
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="m5q-1w-QFa">
                                                             <rect key="frame" x="441" y="-26" width="43" height="38"/>
@@ -190,14 +190,14 @@
                                                             </constraints>
                                                         </imageView>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="eAh-yG-Wyn">
-                                                            <rect key="frame" x="24" y="24" width="110" height="90"/>
+                                                            <rect key="frame" x="24" y="24" width="110" height="18"/>
                                                             <subviews>
                                                                 <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="o8K-wj-6zT" customClass="LabelView" customModule="NubankSimulator" customModuleProvider="target">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="60" height="30"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="60" height="0.0"/>
                                                                     <color key="backgroundColor" systemColor="systemGray3Color"/>
                                                                 </view>
                                                                 <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ua5-AG-xrB" customClass="LabelView" customModule="NubankSimulator" customModuleProvider="target">
-                                                                    <rect key="frame" x="0.0" y="40" width="110" height="50"/>
+                                                                    <rect key="frame" x="0.0" y="10" width="110" height="8"/>
                                                                     <color key="backgroundColor" systemColor="systemGray3Color"/>
                                                                 </view>
                                                             </subviews>
@@ -225,15 +225,15 @@
                                             <outlet property="balanceLabelView" destination="ua5-AG-xrB" id="bYh-72-iQt"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="collection" rowHeight="189" id="ZiJ-Wo-BxF" customClass="CollectionTableViewCell" customModule="NubankSimulator" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="322.66666603088379" width="414" height="189"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="collection" rowHeight="48" id="ZiJ-Wo-BxF" customClass="CollectionTableViewCell" customModule="NubankSimulator" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="173.66666603088379" width="414" height="48"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ZiJ-Wo-BxF" id="r9h-3B-Wiw">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="189"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="48"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="y1g-yU-u5n">
-                                                    <rect key="frame" x="24" y="0.0" width="390" height="189"/>
+                                                    <rect key="frame" x="24" y="0.0" width="390" height="48"/>
                                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="0.0" id="DRR-4w-Mxn">
                                                         <size key="itemSize" width="80" height="120"/>
@@ -243,7 +243,7 @@
                                                     </collectionViewFlowLayout>
                                                     <cells>
                                                         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="collectionCell" id="ooA-vf-OOe" customClass="MenuOptionsCollectionViewCell" customModule="NubankSimulator" customModuleProvider="target">
-                                                            <rect key="frame" x="0.0" y="34.666666666666664" width="80" height="120"/>
+                                                            <rect key="frame" x="0.0" y="-36" width="80" height="120"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="SET-xf-MFY">
                                                                 <rect key="frame" x="0.0" y="0.0" width="80" height="120"/>
@@ -305,6 +305,75 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="collectionItems" destination="y1g-yU-u5n" id="Mzt-xx-pby"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="creditCard" rowHeight="56" id="qrm-p6-oJj" customClass="CreditCardTableViewCell" customModule="NubankSimulator" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="221.66666603088379" width="414" height="56"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qrm-p6-oJj" id="qiH-fA-IU9">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LFj-cX-9nf" customClass="DefaultCard" customModule="NubankSimulator" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="LFj-cX-9nf" secondAttribute="bottom" id="2Wx-D0-rJk"/>
+                                                <constraint firstAttribute="trailing" secondItem="LFj-cX-9nf" secondAttribute="trailing" id="Vf6-B0-o2e"/>
+                                                <constraint firstItem="LFj-cX-9nf" firstAttribute="top" secondItem="qiH-fA-IU9" secondAttribute="top" id="Y9E-9x-FaC"/>
+                                                <constraint firstItem="LFj-cX-9nf" firstAttribute="leading" secondItem="qiH-fA-IU9" secondAttribute="leading" id="k00-HL-LHA"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="creditCardDefaultCard" destination="LFj-cX-9nf" id="xvM-ne-ZBb"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="loan" id="Mrh-VR-I1Q" customClass="LoanTableViewCell" customModule="NubankSimulator" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="277.66666603088379" width="414" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Mrh-VR-I1Q" id="ge4-ie-XYN">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wYZ-U7-L5I" customClass="DefaultCard" customModule="NubankSimulator" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.666666666666664"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="wYZ-U7-L5I" secondAttribute="trailing" id="0ay-GH-N7B"/>
+                                                <constraint firstAttribute="bottom" secondItem="wYZ-U7-L5I" secondAttribute="bottom" id="221-IL-Ld2"/>
+                                                <constraint firstItem="wYZ-U7-L5I" firstAttribute="leading" secondItem="ge4-ie-XYN" secondAttribute="leading" id="vYH-uo-0MN"/>
+                                                <constraint firstItem="wYZ-U7-L5I" firstAttribute="top" secondItem="ge4-ie-XYN" secondAttribute="top" id="yuA-Il-wG4"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="loanDefaultCard" destination="wYZ-U7-L5I" id="ZbF-9Z-Mp2"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="lifeInsurance" id="GLS-t5-1Na" customClass="LifeInsuranceTableViewCell" customModule="NubankSimulator" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="321.33333396911621" width="414" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="GLS-t5-1Na" id="3Z2-wq-1gz">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BfR-BL-7mC" customClass="DefaultCard" customModule="NubankSimulator" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.666666666666664"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="BfR-BL-7mC" secondAttribute="bottom" id="KKj-jN-cnG"/>
+                                                <constraint firstItem="BfR-BL-7mC" firstAttribute="leading" secondItem="3Z2-wq-1gz" secondAttribute="leading" id="cma-R6-P4Y"/>
+                                                <constraint firstItem="BfR-BL-7mC" firstAttribute="top" secondItem="3Z2-wq-1gz" secondAttribute="top" id="oRj-Jc-l07"/>
+                                                <constraint firstAttribute="trailing" secondItem="BfR-BL-7mC" secondAttribute="trailing" id="zjT-Ba-FQM"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="lifeInsuranceDefaultCard" destination="BfR-BL-7mC" id="Jh4-PH-Osi"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>

@@ -4,3 +4,13 @@
 
 // MARK: - Home
 "home.account" = "Conta";
+
+// MARK: - Collection MenuOptions
+"collection.pix" = "Pix";
+"collection.payment" = "Pagamento";
+"collection.transfer" = "Transferir";
+"collection.deposit" = "Depositar";
+"collection.recharge" = "Recarga";
+"collection.demand" = "Cobrar";
+"collection.donation" = "Doação";
+"collection.worldTransfer" = "Transferir Internac.";

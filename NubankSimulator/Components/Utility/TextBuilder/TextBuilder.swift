@@ -4,9 +4,13 @@ class TextBuilder {
     
     func buildText(text: String, style: TextStyle) -> NSAttributedString {
         
+        let paragraphStyle = NSMutableParagraphStyle()
+        paragraphStyle.alignment = style.aligment
+        
         return NSMutableAttributedString(string: text,
                                          attributes: [NSAttributedString.Key.font: getSFProDisplay(withSize: style.size.rawValue, weight: style.weight),
-                                                      NSAttributedString.Key.foregroundColor: style.color])
+                                                      NSAttributedString.Key.foregroundColor: style.color,
+                                                      NSAttributedString.Key.paragraphStyle: paragraphStyle])
     }
 }
 
