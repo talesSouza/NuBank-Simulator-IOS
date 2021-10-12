@@ -7,7 +7,7 @@ class LifeInsuranceTableViewCell: UITableViewCell {
 }
 
 // MARK: - Setup
-extension LifeInsuranceTableViewCell {
+extension LifeInsuranceTableViewCell: HomeCellProtocol {
     
     func setup() {
         lifeInsuranceDefaultCard.set(imageName: "donation", topText: "lifeInsurance.lifeInsurance".localized, bottomText: "lifeInsurance.insuranceText".localized)

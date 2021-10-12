@@ -15,6 +15,12 @@ class LoginViewModel {
     // MARK: Stored Properties
     private var cpf: String?
     private var password: String?
+    
+    // MARK: Computed Properties
+    var isValidData: Bool {
+        guard let cpf = cpf, let password = password else { return false }
+        return !cpf.isEmpty && !password.isEmpty
+    }
 }
 
 // MARK: Sets
@@ -28,15 +34,6 @@ extension LoginViewModel {
     func set(password: String) {
         self.password = password
         state = .dataChanged
-    }
-}
-
-// MARK: Computed Properties
-extension LoginViewModel {
-    
-    var isValidData: Bool {
-        guard let cpf = cpf, let password = password else { return false }
-        return !cpf.isEmpty && !password.isEmpty
     }
 }
 

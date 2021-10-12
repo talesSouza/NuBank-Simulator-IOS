@@ -66,7 +66,10 @@ extension LoginViewController {
         loginButtonView.set(title: "login.login".localized, style: .secondary)
         loginButtonView.getBordered()
         loginButtonView.isEnable(false)
-        didTapButton()
+        loginButtonView.set { [weak self] in
+            guard let self = self else { return }
+            self.viewModel.login()
+        }
     }
     
     private func setupTextFields() {
@@ -81,13 +84,6 @@ extension LoginViewController {
 
 // MARK: - Private Methods
 extension LoginViewController {
-    
-    private func didTapButton() {
-        loginButtonView.set { [weak self] in
-            guard let self = self else { return }
-            self.viewModel.login()
-        }
-    }
     
     private func goToHome() {
         self.performSegue(withIdentifier: "goToHome", sender: self)

@@ -10,7 +10,7 @@ class CreditCardTableViewCell: UITableViewCell {
 }
 
 // MARK: Setup
-extension CreditCardTableViewCell {
+extension CreditCardTableViewCell: HomeCellProtocol {
     
     func setup() {
         creditCardDefaultCard.set(imageName: "creditCard", topText: "creditCard.creditCard".localized, bottomText: "Limite disponível de R$ \(user.limit)")

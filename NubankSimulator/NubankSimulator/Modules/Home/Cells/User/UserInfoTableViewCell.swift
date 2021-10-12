@@ -11,7 +11,7 @@ class UserInfoTableViewCell: UITableViewCell {
 }
 
 // MARK: - Setup
-extension UserInfoTableViewCell {
+extension UserInfoTableViewCell: HomeCellProtocol {
     
     func setup() {
         roundedView.layer.cornerRadius = roundedView.frame.size.width / 2

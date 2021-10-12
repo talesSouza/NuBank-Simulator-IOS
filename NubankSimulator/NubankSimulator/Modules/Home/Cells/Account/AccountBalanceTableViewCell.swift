@@ -11,7 +11,7 @@ class AccountBalanceTableViewCell: UITableViewCell {
 }
 
 // MARK: - Setup
-extension AccountBalanceTableViewCell {
+extension AccountBalanceTableViewCell: HomeCellProtocol {
     
     func setup() {
         accountLabelView.set(text: "balance.account".localized, textStyle: TextStyle(size: .p24))

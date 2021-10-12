@@ -16,12 +16,16 @@ class CollectionTableViewCell: UITableViewCell {
                                      MenuOption(imageName: "worldTransfer", text: "collection.worldTransfer".localized)]
 }
 
-// MARK: - UICollectionViewDelegate & UICollectionViewDataSource
-extension CollectionTableViewCell: UICollectionViewDelegate, UICollectionViewDataSource {
+// MARK: - Setup
+extension CollectionTableViewCell: HomeCellProtocol {
     
-    func reloadCollectionView() -> Void {
+    func setup() {
         self.collectionItems.reloadData()
     }
+}
+
+// MARK: - UICollectionViewDelegate & UICollectionViewDataSource
+extension CollectionTableViewCell: UICollectionViewDelegate, UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return menuOptions.count

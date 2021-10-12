@@ -8,7 +8,7 @@ class LoanTableViewCell: UITableViewCell {
 }
 
 // MARK: Setup
-extension LoanTableViewCell {
+extension LoanTableViewCell: HomeCellProtocol {
     
     func setup() {
         loanDefaultCard.set(imageName: "loanMoney", topText: "Empréstimo", bottomText: "loan.loanText".localized)
