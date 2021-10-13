@@ -9,7 +9,11 @@ class LoginViewController: BaseViewController {
     @IBOutlet weak var loginButtonView: ButtonView!
     
     // MARK: - Dependencies
-    var viewModel: LoginViewModel = LoginViewModel()
+    var viewModel: LoginViewModel!
+    
+    // MARK: - Action
+    var loginSucceededAction: SimpleClosure = {}
+    var goToRegisterAction: SimpleClosure = {}
 }
 
 // MARK: - Life Cycle
@@ -48,7 +52,7 @@ extension LoginViewController {
         case .loginFailed:
             showSimpleAlert(message: "Login falhou!")
         case .loginSucceeded:
-            goToHome()
+            loginSucceededAction()
         }
     }
 }
@@ -79,14 +83,6 @@ extension LoginViewController {
     
     private func setupLabels() {
         loginLabelView.set(text: "login.doLogin".localized, textStyle: TextStyle(color: .white, size: .p18, weight: .semiBold))
-    }
-}
-
-// MARK: - Private Methods
-extension LoginViewController {
-    
-    private func goToHome() {
-        self.performSegue(withIdentifier: "goToHome", sender: self)
     }
 }
 

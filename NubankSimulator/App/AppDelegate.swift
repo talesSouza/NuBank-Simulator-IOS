@@ -11,12 +11,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     // MARK: - Stored Properties
     var window: UIWindow?
+    var coordinator: Coordinator?
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         IQKeyboardManager.shared.enable = true
         
         setupAppDependencies()
-        setInitialViewController()
+        setupCoordinator()
+        setupWindow()
         
         return true
     }
@@ -25,10 +27,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 // MARK: - Setup
 extension AppDelegate {
     
-    private func setupWindow(rootViewController: UIViewController) {
-        self.window = UIWindow(frame: UIScreen.main.bounds)
-        self.window?.rootViewController = rootViewController
-        self.window?.makeKeyAndVisible()
+    func setupWindow() {
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.rootViewController = coordinator?.navigation
+        window?.makeKeyAndVisible()
+    }
+    
+    func setupCoordinator() {
+        let navigation = UINavigationController()
+        navigation.isNavigationBarHidden = true
+        coordinator = AuthCoordinator(navigation: navigation)
+        coordinator?.start()
     }
     
     private func setupAppDependencies() {
@@ -37,23 +46,23 @@ extension AppDelegate {
     }
 }
 
-// MARK: - Launch
-extension AppDelegate {
-    
-    private func setInitialViewController() {
-        
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        
-        guard let navigation = storyboard.instantiateInitialViewController() as? UINavigationController else { return }
-        var rootViewController: UIViewController
-        
-        if let isLogged: Bool = storage.get(key: .isLogged), isLogged {
-            rootViewController = storyboard.instantiateViewController(withIdentifier: "HomeViewController")
-        } else {
-            rootViewController = storyboard.instantiateViewController(withIdentifier: "LoginViewController")
-        }
-        
-        navigation.viewControllers = [rootViewController]
-        setupWindow(rootViewController: navigation)
-    }
-}
+//// MARK: - Launch
+//extension AppDelegate {
+//
+//    private func setInitialViewController() {
+//
+//        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+//
+//        guard let navigation = storyboard.instantiateInitialViewController() as? UINavigationController else { return }
+//        var rootViewController: UIViewController
+//
+//        if let isLogged: Bool = storage.get(key: .isLogged), isLogged {
+//            rootViewController = storyboard.instantiateViewController(withIdentifier: "HomeViewController")
+//        } else {
+//            rootViewController = storyboard.instantiateViewController(withIdentifier: "LoginViewController")
+//        }
+//
+//        navigation.viewControllers = [rootViewController]
+//        setupWindow(rootViewController: navigation)
+//    }
+//}
